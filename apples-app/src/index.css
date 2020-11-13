@@ -1,0 +1,50 @@
+
+li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+th, td {
+    padding: 30px;
+}
+
+.title {
+   text-align: center;
+}
+
+.header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.rules {
+    font-size: larger;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.start_button {
+    text-align: center;
+}
+
+
+.player_icon {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.center {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.red_card {
+    height: 100px;
+    width: 60px;
+    background-color: red;
+    border: solid black;
+}
