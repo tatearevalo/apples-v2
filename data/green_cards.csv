@@ -1,0 +1,608 @@
+0,Absurd,(ridiculous senseless foolish) ,True,False,False,False,True,False,False,False
+1,Abundant,(plentiful ample numerous) ,False,False,False,False,True,False,False,False
+2,Addictive,(obsessive consuming captivating) ,True,False,False,True,False,False,False,False
+3,Adorable,(lovable charming delightful) ,True,True,False,False,False,False,False,False
+4,Adorable,(lovable cute) ,False,False,True,False,False,False,False,False
+5,Aged,(old ancient mature) ,True,False,False,False,True,False,False,False
+6,Amazing,(astonishing surprising wonderful) ,False,False,False,False,False,True,False,False
+7,Amazing,(surprising wonderful) ,False,False,True,False,False,False,False,False
+8,American,(U.S. Citizen Yankee Apple Pie) ,True,False,False,False,True,False,False,False
+9,Ancient,(elderly old antique) ,True,True,False,False,False,False,False,False
+10,Animated,(lively exuberant spirited) ,True,True,False,False,False,False,False,False
+11,Annoying,(irritating bothersome teasing) ,True,False,False,True,False,False,False,False
+12,Annoying,(bothersome irritating) ,False,False,True,False,False,False,False,False
+13,Appetizing,(appealing tasty flavorful) ,True,False,False,False,True,False,False,False
+14,Armed & Dangerous,(hazardous threatening fortified) ,False,False,False,False,False,False,True,False
+15,Arrogant,(egotistical overconfident conceited) ,True,True,False,False,False,False,False,False
+16,Attractive,(alluring engaging good-looking) ,False,False,False,False,False,True,False,False
+17,Attractive,(pretty good-looking) ,False,False,True,False,False,False,False,False
+18,Awesome,(amazing remarkable majestic) ,True,False,False,True,False,False,False,False
+19,Awful,(very bad horrible) ,False,False,True,False,False,False,False,False
+20,Awkward,(clumsy bumbling uncoordinated) ,True,True,False,False,False,False,False,False
+21,Bad,(rotten hurtful) ,False,False,True,False,False,False,False,False
+22,Bashful,(shy timid modest) ,False,False,False,False,False,True,False,False
+23,Beautiful,(pretty lovely) ,False,False,True,False,False,False,False,False
+24,Believable,(trustworthy credible convincing) ,True,False,False,True,False,False,False,False
+25,Best,(greatest finest) ,False,False,True,False,False,False,False,False
+26,Big,(large huge) ,False,False,True,False,False,False,False,False
+27,Big & Tall,(large bulky gigantic) ,False,False,False,False,False,False,True,False
+28,Bitter,(sour tart) ,False,False,True,False,False,False,False,False
+29,Black & Blue,(bruised battered rough) ,False,False,False,False,False,False,True,False
+30,Black & White,(indisputable distinct written) ,False,False,False,False,False,False,True,False
+31,Bogus,(fraudulent phony insincere) ,True,False,False,True,False,False,False,False
+32,Boisterous,(loud rambunctious rowdy) ,True,True,False,False,False,False,False,False
+33,Bold,(daring brave courageous) ,True,False,False,True,False,False,False,False
+34,Bold,(daring courageous) ,False,False,True,False,False,False,False,False
+35,Boring,(dull tedious monotonous) ,True,True,False,False,False,False,False,False
+36,Boring,(not interesting dull) ,False,False,True,False,False,False,False,False
+37,Brains & Brawn,(solid strong capable) ,False,False,False,False,False,False,True,False
+38,Brave,(fearless courageous) ,False,False,True,False,False,False,False,False
+39,Bright,(brilliant radiant shiny) ,True,False,False,True,False,False,False,False
+40,Bright,(light intelligent) ,False,False,True,False,False,False,False,False
+41,Bright & Shining,(radiant sparkling gleaming) ,False,False,False,False,False,False,True,False
+42,Brilliant,(dazzling gleaming intelligent) ,True,True,False,False,False,False,False,False
+43,Brutal,(cruel crude harsh) ,False,False,False,False,False,True,False,False
+44,Bumpy,(lumpy bouncy) ,False,False,True,False,False,False,False,False
+45,Busy,(occupied meddlesome engrossed) ,True,False,False,False,True,False,False,False
+46,Busy,(active unavailable) ,False,False,True,False,False,False,False,False
+47,Calm,(peaceful tranquil placid) ,True,True,False,False,False,False,False,False
+48,Calm,(peaceful still) ,False,False,True,False,False,False,False,False
+49,Careful,(cautious thoughtful) ,False,False,True,False,False,False,False,False
+50,Caring,(concerned interested) ,False,False,True,False,False,False,False,False
+51,Casual,(easygoing blase nonchalant) ,True,True,False,False,False,False,False,False
+52,Charismatic,(alluring magnetic charming) ,True,False,False,False,True,False,False,False
+53,Charming,(captivating enchanting fascinating) ,True,True,False,False,False,False,False,False
+54,Charming,(pleasant polite) ,False,False,True,False,False,False,False,False
+55,Cheerful,(happy lively) ,False,False,True,False,False,False,False,False
+56,Cheesy,(trashy tawdry far-fetched) ,True,True,False,False,False,False,False,False
+57,Chewy,(gummy rubbery stringy) ,True,False,False,True,False,False,False,False
+58,Chewy,(gummy rubbery) ,False,False,True,False,False,False,False,False
+59,Chubby,(plump round) ,False,False,True,False,False,False,False,False
+60,Chunky,(lumpy chubby bumpy) ,True,False,False,True,False,False,False,False
+61,Classic,(timeless definitive vintage) ,True,False,False,True,False,False,False,False
+62,Clean,(washed pure tidy) ,True,False,False,False,True,False,False,False
+63,Clean,(spotless clear) ,False,False,True,False,False,False,False,False
+64,Clear,(understandable uncluttered transparent) ,False,False,False,True,False,False,False,False
+65,Clever,(intelligent ingenious witty) ,False,False,False,False,False,True,False,False
+66,Clueless,(unaware oblivious ignorant) ,True,False,False,True,False,False,False,False
+67,Clumsy,(awkward bumbling uncoordinated) ,False,False,False,False,False,True,False,False
+68,Clumsy,(awkward not graceful) ,False,False,True,False,False,False,False,False
+69,Cold,(chilly icy aloof) ,True,False,False,False,True,False,False,False
+70,Cold,(cool chilly) ,False,False,True,False,False,False,False,False
+71,Colorful,(vivid brilliant kaleidoscopic) ,True,True,False,False,False,False,False,False
+72,Colorful,(full of color bright) ,False,False,True,False,False,False,False,False
+73,Comfortable,(cozy snug restful) ,True,False,False,False,True,False,False,False
+74,Comfortable,(cozy pleasant) ,False,False,True,False,False,False,False,False
+75,Comical,(funny hilarious amusing) ,True,False,False,False,True,False,False,False
+76,Complicated,(difficult complex involved) ,True,False,False,True,False,False,False,False
+77,Conceited,(vain smug self-centered) ,False,False,False,False,False,True,False,False
+78,Confused,(muddled bewildered perplexed) ,True,False,False,True,False,False,False,False
+79,Confusing,(puzzling weird) ,False,False,True,False,False,False,False,False
+80,Controversial,(contentious disputable debatable) ,False,False,False,False,False,True,False,False
+81,Cool,(chilly hip cold-blooded) ,True,True,False,False,False,False,False,False
+82,Cool,(not hot chilled) ,False,False,True,False,False,False,False,False
+83,Cool & Collected,(controlled composed restrained) ,False,False,False,False,False,False,True,False
+84,Corrupt,(dishonest underhanded shady) ,True,True,False,False,False,False,False,False
+85,Cosmic,(limitless planetary far out) ,True,False,False,False,True,False,False,False
+86,Costly,(expensive valuable) ,False,False,True,False,False,False,False,False
+87,Courageous,(brave gallant dauntless) ,True,True,False,False,False,False,False,False
+88,Courageous,(brave bold) ,False,False,True,False,False,False,False,False
+89,Cowardly,(fearful afraid spineless) ,True,False,False,True,False,False,False,False
+90,Cozy,(comfortable snug warm) ,False,False,False,False,False,True,False,False
+91,Cozy,(comfortable warm) ,False,False,True,False,False,False,False,False
+92,Cranky,(crabby cantankerous grouchy) ,True,False,False,False,True,False,False,False
+93,Crazed,(insane wild deranged) ,True,True,False,False,False,False,False,False
+94,Crazy,(insane bizarre wacky) ,True,False,False,True,False,False,False,False
+95,Crazy,(silly foolish) ,False,False,True,False,False,False,False,False
+96,Creative,(imaginative artistic original) ,True,True,False,False,False,False,False,False
+97,Creepy,(frightening slithering scary) ,True,True,False,False,False,False,False,False
+98,Creepy,(spooky scary) ,False,False,True,False,False,False,False,False
+99,Creepy & Crawly,(frightening ghastly icky) ,False,False,False,False,False,False,True,False
+100,Crisp,(brittle brisk fresh) ,False,False,False,False,False,True,False,False
+101,Crisp & Delicious,(tasty crunchy savory) ,False,False,False,False,False,False,True,False
+102,Crooked,(bent not straight) ,False,False,True,False,False,False,False,False
+103,Cruel & Unusual,(barbaric merciless unwarranted) ,False,False,False,False,False,False,True,False
+104,Crunchy,(crispy crackling) ,False,False,True,False,False,False,False,False
+105,Cuddly,(loving tender huggable) ,True,True,False,False,False,False,False,False
+106,Cuddly,(cozy soft) ,False,False,True,False,False,False,False,False
+107,Curved,(bent rounded) ,False,False,True,False,False,False,False,False
+108,Cut & Dried,(settled obvious indisputable) ,False,False,False,False,False,False,True,False
+109,Cute,(pretty perky delightful) ,True,False,False,False,True,False,False,False
+110,Cute,(pretty good-looking) ,False,False,True,False,False,False,False,False
+111,Cute & Cuddly,(adorable precious huggable) ,False,False,False,False,False,False,True,False
+112,Dainty,(delicate fragile thin) ,True,True,False,False,False,False,False,False
+113,Dainty,(delicate elegant) ,False,False,True,False,False,False,False,False
+114,Dangerous,(risky chancy hazardous) ,True,True,False,False,False,False,False,False
+115,Dangerous,(unsafe risky) ,False,False,True,False,False,False,False,False
+116,Daring,(brave bold) ,False,False,True,False,False,False,False,False
+117,Dark,(unlit morbid sinister) ,False,False,False,False,False,True,False,False
+118,Dark,(without light nearly black) ,False,False,True,False,False,False,False,False
+119,Dashing,(gallant bold elegant) ,False,False,False,False,False,True,False,False
+120,Dazed & Confused,(stunned bewildered disoriented) ,False,False,False,False,False,False,True,False
+121,Dead,(deceased expired unresponsive) ,True,False,False,False,True,False,False,False
+122,Dead & Gone,(deceased defunct passe) ,False,False,False,False,False,False,True,False
+123,Deadly,(fatal lethal murderous) ,True,False,False,True,False,False,False,False
+124,Delicate,(dainty tender elegant) ,True,True,False,False,False,False,False,False
+125,Delicate,(breakable dainty) ,False,False,True,False,False,False,False,False
+126,Delicious,(tasty pleasing appetizing) ,True,True,False,False,False,False,False,False
+127,Delicious,(tasty pleasing) ,False,False,True,False,False,False,False,False
+128,Delightful,(pleasing enjoyable charming) ,True,False,False,True,False,False,False,False
+129,Demanding,(difficult exacting bothersome) ,True,True,False,False,False,False,False,False
+130,Depressing,(dismal gloomy sad) ,True,False,False,False,True,False,False,False
+131,Desperate,(frantic headlong reckless) ,True,True,False,False,False,False,False,False
+132,Devious,(sneaky shifty tricky) ,False,False,False,False,False,True,False,False
+133,Difficult,(complicated hard) ,False,False,True,False,False,False,False,False
+134,Dignified,(stately honorable distinguished) ,True,False,False,True,False,False,False,False
+135,Dirty,(unclean soiled impure) ,True,False,False,False,True,False,False,False
+136,Dirty,(unclean filthy) ,False,False,True,False,False,False,False,False
+137,Disgusting,(sickening horrible) ,False,False,True,False,False,False,False,False
+138,Distinguished,(dignified extraordinary acclaimed) ,True,True,False,False,False,False,False,False
+139,Disturbing,(unsettling troubling worrisome) ,True,False,False,True,False,False,False,False
+140,Down & Dirty,(nasty vicious unscrupulous) ,False,False,False,False,False,False,True,False
+141,Down & Out,(destitute impoverished penniless) ,False,False,False,False,False,False,True,False
+142,Dramatic,(exciting sensational theatrical) ,True,True,False,False,False,False,False,False
+143,Dreamy,(fanciful whimsical heavenly) ,True,False,False,True,False,False,False,False
+144,Drunk & Disorderly,(intoxicated unruly rowdy) ,False,False,False,False,False,False,True,False
+145,Dull,(not sharp plain) ,False,False,True,False,False,False,False,False
+146,Dumb,(silent not smart) ,False,False,True,False,False,False,False,False
+147,Dumb & Dumber,(stupid dull rediculous) ,False,False,False,False,False,False,True,False
+148,Dysfunctional,(impaired damaged maladjusted) ,True,False,False,False,True,False,False,False
+149,Earthy,(unrefined natural crude) ,True,True,False,False,False,False,False,False
+150,Easy,(effortless gentle promiscuous) ,True,True,False,False,False,False,False,False
+151,Easy,(simple not hard) ,False,False,True,False,False,False,False,False
+152,Eccentric,(peculiar odd bizarre) ,True,False,False,False,True,False,False,False
+153,Edgy,(irritable nervous tense) ,False,False,False,False,False,True,False,False
+154,Elderly,(old aged) ,False,False,True,False,False,False,False,False
+155,Elitist,(snobbish arrogant smug) ,True,False,False,False,True,False,False,False
+156,Emotional,(passionate moving volatile) ,True,False,False,False,True,False,False,False
+157,Enchanting,(captivating charming spell-binding) ,False,False,False,False,False,True,False,False
+158,Endangered,(at risk threatened unprotected) ,False,False,False,False,False,True,False,False
+159,Energetic,(active vigorous forceful) ,False,False,False,False,False,True,False,False
+160,Energetic,(active lively) ,False,False,True,False,False,False,False,False
+161,Enjoyable,(pleasurable entertaining fun) ,False,False,False,False,False,True,False,False
+162,Enjoyable,(pleasant fun) ,False,False,True,False,False,False,False,False
+163,Enormous,(large huge gigantic) ,False,False,False,False,False,True,False,False
+164,Enormous,(huge gigantic) ,False,False,True,False,False,False,False,False
+165,Entertaining,(amusing festive enjoyable) ,False,False,False,False,False,True,False,False
+166,Entertaining,(interesting fun) ,False,False,True,False,False,False,False,False
+167,Eternal,(timeless immortal perpetual) ,True,False,False,False,True,False,False,False
+168,European,(of Europe from Europe about Europe) ,True,False,False,False,True,False,False,False
+169,Evil,(wicked corrupt depraved) ,False,False,False,False,False,True,False,False
+170,Excellent,(very good outstanding) ,False,False,True,False,False,False,False,False
+171,Exciting,(thrilling breathtaking arousing) ,True,False,False,True,False,False,False,False
+172,Exciting,(thrilling interesting) ,False,False,True,False,False,False,False,False
+173,Exhausting,(weakening tiring draining) ,True,False,False,False,True,False,False,False
+174,Expensive,(costly valuable exorbitant) ,True,True,False,False,False,False,False,False
+175,Expensive,(costly high priced) ,False,False,True,False,False,False,False,False
+176,Explosive,(bursting blasting dangerous) ,True,False,False,True,False,False,False,False
+177,Exquisite,(excellent refined flawless) ,True,False,False,False,True,False,False,False
+178,Extreme,(exceptional superlative radical) ,True,True,False,False,False,False,False,False
+179,Fabulous,(marvelous wonderful incredible) ,True,True,False,False,False,False,False,False
+180,Fake,(unreal counterfeit deceptive) ,True,False,False,False,True,False,False,False
+181,Famous,(well-known celebrated distinguished) ,False,False,False,False,False,True,False,False
+182,Famous,(well-known important) ,False,False,True,False,False,False,False,False
+183,Fancy,(showy ornate decorated) ,True,False,False,True,False,False,False,False
+184,Fancy,(decorated elegant) ,False,False,True,False,False,False,False,False
+185,Fantastic,(awesome outrageous imaginary) ,True,False,False,True,False,False,False,False
+186,Fascinating,(interesting attractive) ,False,False,True,False,False,False,False,False
+187,Fashionable,(stylish dashing current) ,False,False,False,False,False,True,False,False
+188,Fast,(swift quick rapid) ,False,False,False,False,False,True,False,False
+189,Fast,(speedy quick) ,False,False,True,False,False,False,False,False
+190,Fast & Furious,(wild reckless breakneck) ,False,False,False,False,False,False,True,False
+191,Fast & Loose,(deceitful fraudulent reckless) ,False,False,False,False,False,False,True,False
+192,Fat,(plump thick) ,False,False,True,False,False,False,False,False
+193,Fat & Happy,(content satisfied assured) ,False,False,False,False,False,False,True,False
+194,Favorite,(preferred desired) ,False,False,True,False,False,False,False,False
+195,Fearful,(scared worried) ,False,False,True,False,False,False,False,False
+196,Feminine,(womanly ladylike unmanly) ,True,True,False,False,False,False,False,False
+197,Filthy,(dirty foul unclean) ,True,True,False,False,False,False,False,False
+198,Fine,(worthy delicate all right) ,False,False,False,False,True,False,False,False
+199,Flaky,(foolish eccentric crispy) ,False,False,False,False,False,True,False,False
+200,Flamboyant,(ornate pompous extravagant) ,False,False,False,False,False,True,False,False
+201,Flat,(smooth level) ,False,False,True,False,False,False,False,False
+202,Flavorful,(tasty savory pungent) ,False,False,False,False,False,True,False,False
+203,Flavorful,(tasty appetizing) ,False,False,True,False,False,False,False,False
+204,Flawed,(imperfect defective unsound) ,False,False,False,False,False,True,False,False
+205,Flirtatious,(brazen saucy forward) ,True,True,False,False,False,False,False,False
+206,Foot Loose & Fancy Free,(lighthearted carefree spontaneous) ,False,False,False,False,False,False,True,False
+207,Foreign,(alien unfamiliar exotic) ,True,False,False,True,False,False,False,False
+208,Fragile,(delicate frail breakable) ,False,False,False,False,False,True,False,False
+209,Fragile,(delicate weak) ,False,False,True,False,False,False,False,False
+210,Fragrant,(aromatic odorous perfumed) ,True,True,False,False,False,False,False,False
+211,Frail,(fragile weak) ,False,False,True,False,False,False,False,False
+212,Frazzled,(exhausted frayed worn) ,True,True,False,False,False,False,False,False
+213,Fresh,(new original good) ,True,True,False,False,False,False,False,False
+214,Fresh,(new clean) ,False,False,True,False,False,False,False,False
+215,Friendly,(affectionate comforting welcoming) ,True,False,False,False,True,False,False,False
+216,Friendly,(kind nice) ,False,False,True,False,False,False,False,False
+217,Frightening,(scary horrifying awesome) ,True,True,False,False,False,False,False,False
+218,Frightening,(scary horrifying) ,False,False,True,False,False,False,False,False
+219,Funky,(groovy psychedelic hip) ,True,False,False,True,False,False,False,False
+220,Fun,(enjoyable playful amusing) ,False,False,False,False,False,True,False,False
+221,Fun,(enjoyable playful) ,False,False,True,False,False,False,False,False
+222,Funny,(amusing comic odd) ,True,False,False,True,False,False,False,False
+223,Funny,(silly goofy) ,False,False,True,False,False,False,False,False
+224,Furious,(angry raging wild) ,True,False,False,True,False,False,False,False
+225,Furry,(hairy fuzzy) ,False,False,True,False,False,False,False,False
+226,Fuzzy,(downy unclear furry) ,True,False,False,False,True,False,False,False
+227,Fuzzy,(furry fuzz-covered) ,False,False,True,False,False,False,False,False
+228,Gentle,(tame mild) ,False,False,True,False,False,False,False,False
+229,Gigantic,(huge large) ,False,False,True,False,False,False,False,False
+230,Glamorous,(beautiful dazzling stylish) ,True,False,False,True,False,False,False,False
+231,Glitzy,(flashy showy gaudy) ,True,False,False,False,True,False,False,False
+232,Global,(world-wide spherical universal) ,True,False,False,False,True,False,False,False
+233,Gloomy,(dreary depressing sullen) ,False,False,False,False,False,True,False,False
+234,Glorious,(magnificent delightful splendid) ,True,False,False,False,True,False,False,False
+235,Good,(not bad fine) ,False,False,True,False,False,False,False,False
+236,Goody-Goody,(sweet well-behaved virtuous) ,True,False,False,False,True,False,False,False
+237,Goofy,(silly foolish giddy) ,False,False,False,False,False,True,False,False
+238,Goofy,(silly weird) ,False,False,True,False,False,False,False,False
+239,Gorgeous,(beautiful stunning magnificent) ,False,False,False,False,False,True,False,False
+240,Gorgeous,(beautiful dazzling) ,False,False,True,False,False,False,False,False
+241,Graceful,(elegant supple limber) ,True,True,False,False,False,False,False,False
+242,Graceful,(elegant flowing) ,False,False,True,False,False,False,False,False
+243,Great,(very good important) ,False,False,True,False,False,False,False,False
+244,Grueling,(demanding exhausting strenuous) ,False,False,False,False,False,True,False,False
+245,Gruesome,(ghastly hideous grisly) ,False,False,False,False,False,True,False,False
+246,Grungy,(dirty shabby seedy) ,False,False,False,False,False,True,False,False
+247,Hairy,(not bald furry) ,False,False,True,False,False,False,False,False
+248,Hale & Hearty,(healthy vigorous robust) ,False,False,False,False,False,False,True,False
+249,Handsome,(attractive elegant fine) ,True,True,False,False,False,False,False,False
+250,Handy,(convenient available capable) ,False,False,False,False,False,True,False,False
+251,Handy,(useful helpful) ,False,False,True,False,False,False,False,False
+252,Happy,(glad jolly) ,False,False,True,False,False,False,False,False
+253,Hard,(not soft difficult) ,False,False,True,False,False,False,False,False
+254,Hardworking,(industrious diligent busy) ,True,True,False,False,False,False,False,False
+255,Hardworking,(industrious careful) ,False,False,True,False,False,False,False,False
+256,Harmful,(hurtful unhealthy damaging) ,True,False,False,True,False,False,False,False
+257,Harmful,(hurtful damaging) ,False,False,True,False,False,False,False,False
+258,Harsh,(severe glaring brutal) ,False,False,False,False,False,True,False,False
+259,Haunting,(unforgettable bewitching unearthly) ,True,False,False,False,True,False,False,False
+260,Hazardous,(risky dangerous perilous) ,False,False,False,False,False,True,False,False
+261,Healthy,(hearty robust wholesome) ,True,False,False,False,True,False,False,False
+262,Healthy,(not sick well) ,False,False,True,False,False,False,False,False
+263,Heartless,(insensitive cruel uncaring) ,True,False,False,True,False,False,False,False
+264,Heavy,(not light bulky) ,False,False,True,False,False,False,False,False
+265,Helpful,(useful assisting) ,False,False,True,False,False,False,False,False
+266,High & Dry,(abandoned alone helpless) ,False,False,False,False,False,False,True,False
+267,High & Low,(everywhere universally all over) ,False,False,False,False,False,False,True,False
+268,High & Mighty,(arrogant conceited vain) ,False,False,False,False,False,False,True,False
+269,Hilarious,(funny witty amusing) ,True,True,False,False,False,False,False,False
+270,Hit & Miss,(sporadic unreliable erratic) ,False,False,False,False,False,False,True,False
+271,Honest,(trustworthy truthful) ,False,False,True,False,False,False,False,False
+272,Honorable,(honest just virtuous) ,True,True,False,False,False,False,False,False
+273,Hopeless,(pessimistic desperate downhearted) ,True,True,False,False,False,False,False,False
+274,Horrible,(frightening awful) ,False,False,True,False,False,False,False,False
+275,Horrifying,(offensive abominable disgusting) ,True,True,False,False,False,False,False,False
+276,Hostile,(antagonistic aggressive warlike) ,True,True,False,False,False,False,False,False
+277,Hot,(blazing heated spicy) ,True,False,False,True,False,False,False,False
+278,Hot,(very warm heated) ,False,False,True,False,False,False,False,False
+279,Hot & Bothered,(annoyed irritated provoked) ,False,False,False,False,False,False,True,False
+280,Hot & Cold,(ambivalent indecisive varying) ,False,False,False,False,False,False,True,False
+281,Hot & Heavy,(passionate momentous serious) ,False,False,False,False,False,False,True,False
+282,Hot & Muggy,(sultry humid oppressive) ,False,False,False,False,False,False,True,False
+283,Hot & Spicy,(zesty stimulating pungent) ,False,False,False,False,False,False,True,False
+284,Hot & Sweaty,(sweltering intense perspiring) ,False,False,False,False,False,False,True,False
+285,Huge,(gigantic immense important) ,False,False,False,False,False,True,False,False
+286,Huge,(big large) ,False,False,True,False,False,False,False,False
+287,Humorous,(funny amusing comical) ,False,False,False,False,False,True,False,False
+288,Icky,(sickening disgusting repulsive) ,False,False,False,False,False,True,False,False
+289,Ideal,(perfect flawless model) ,False,False,False,False,False,True,False,False
+290,Idiotic,(foolish dumb moronic) ,True,True,False,False,False,False,False,False
+291,Important,(significant substantial momentous) ,True,True,False,False,False,False,False,False
+292,Important,(valuable worthwhile) ,False,False,True,False,False,False,False,False
+293,Industrious,(diligent busy hard-working) ,True,True,False,False,False,False,False,False
+294,Influential,(powerful prominent important) ,True,True,False,False,False,False,False,False
+295,Innocent,(guiltless pure naive) ,True,False,False,False,True,False,False,False
+296,Insane,(psychotic deranged mad) ,True,False,False,False,True,False,False,False
+297,Inspirational,(exhilarating inspiring stimulating) ,True,True,False,False,False,False,False,False
+298,Insulting,(offending discourteous rude) ,True,False,False,False,True,False,False,False
+299,Intelligent,(bright smart brainy) ,True,False,False,True,False,False,False,False
+300,Intense,(extreme passionate strained) ,True,False,False,True,False,False,False,False
+301,Interesting,(fascinating exciting) ,False,False,True,False,False,False,False,False
+302,Irresistible,(overpowering overwhelming compelling) ,True,False,False,False,True,False,False,False
+303,Irritating,(annoying troublesome provoking) ,True,False,False,True,False,False,False,False
+304,Jolly,(cheerful joyous merry) ,False,False,False,False,False,True,False,False
+305,Jolly,(cheerful fun) ,False,False,True,False,False,False,False,False
+306,Juicy,(drippy luscious tantalizing) ,True,False,False,True,False,False,False,False
+307,Juicy,(wet squishy) ,False,False,True,False,False,False,False,False
+308,Kind,(nice helpful) ,False,False,True,False,False,False,False,False
+309,Large,(big not small) ,False,False,True,False,False,False,False,False
+310,Lazy,(lifeless apathetic weary) ,True,False,False,False,True,False,False,False
+311,Lazy,(slow careless) ,False,False,True,False,False,False,False,False
+312,Lean & Mean,(vigorous fit efficient) ,False,False,False,False,False,False,True,False
+313,Legendary,(famous distinctive prominent) ,True,False,False,False,True,False,False,False
+314,Lewd & Lascivious,(lustful obscene indecent) ,False,False,False,False,False,False,True,False
+315,Light,(not dark not heavy) ,False,False,True,False,False,False,False,False
+316,Light & Fluffy,(billowy airy soft) ,False,False,False,False,False,False,True,False
+317,Little,(small tiny) ,False,False,True,False,False,False,False,False
+318,Lively,(cheerful active) ,False,False,True,False,False,False,False,False
+319,Long,(not short stretched) ,False,False,True,False,False,False,False,False
+320,Long & Lean,(slender lanky wiry) ,False,False,False,False,False,False,True,False
+321,Loud,(noisy boisterous deafening) ,True,True,False,False,False,False,False,False
+322,Loud,(noisy not quiet) ,False,False,True,False,False,False,False,False
+323,Loud & Clear,(definite explicit unequivocal) ,False,False,False,False,False,False,True,False
+324,Lovable,(adorable endearing cuddly) ,True,False,False,True,False,False,False,False
+325,Lovable,(adorable enchanting) ,False,False,True,False,False,False,False,False
+326,Loving,(caring kind) ,False,False,True,False,False,False,False,False
+327,Lucky,(fortunate serendipitous favored) ,True,True,False,False,False,False,False,False
+328,Lucky,(fortunate favored) ,False,False,True,False,False,False,False,False
+329,Lumpy,(bumpy clumpy) ,False,False,True,False,False,False,False,False
+330,Luscious,(delicious savory juicy) ,True,True,False,False,False,False,False,False
+331,Luxurious,(opulent lavish sumptuous) ,True,True,False,False,False,False,False,False
+332,Magical,(enchanting miraculous marvelous) ,True,True,False,False,False,False,False,False
+333,Magical,(mysterious delightful) ,False,False,True,False,False,False,False,False
+334,Manly,(masculine virile strong) ,True,False,False,False,True,False,False,False
+335,Masculine,(male manly virile) ,True,True,False,False,False,False,False,False
+336,Mean,(malicious ill-tempered petty) ,False,False,False,False,False,True,False,False
+337,Mean,(unkind nasty) ,False,False,True,False,False,False,False,False
+338,Meek,(shy mild timid) ,True,False,False,False,True,False,False,False
+339,Meek & Mild,(timid docile gentle) ,False,False,False,False,False,False,True,False
+340,Mesmerizing,(fascinating hypnotizing charming) ,False,False,False,False,False,True,False,False
+341,Messy,(sloppy disorderly unclean) ,False,False,False,False,False,True,False,False
+342,Messy,(sloppy dirty) ,False,False,True,False,False,False,False,False
+343,Mischievous,(naughty prankish sly) ,True,True,False,False,False,False,False,False
+344,Miserable,(wretched pitiful forlorn) ,True,False,False,False,True,False,False,False
+345,Miserable,(unhappy sorrowful) ,False,False,True,False,False,False,False,False
+346,Misunderstood,(not grasped not learned not absorbed) ,True,True,False,False,False,False,False,False
+347,Modern,(contemporary fashionable trendy) ,False,False,False,False,False,True,False,False
+348,Mushy,(soft squishy) ,False,False,True,False,False,False,False,False
+349,Mysterious,(secretive puzzling strange) ,True,False,False,True,False,False,False,False
+350,Mysterious,(strange secretive) ,False,False,True,False,False,False,False,False
+351,Mystical,(spiritual secretive esoteric) ,True,False,False,False,True,False,False,False
+352,Naive,(unsophisticated childlike simple) ,True,False,False,True,False,False,False,False
+353,Nasty,(mean inclement offensive) ,True,True,False,False,False,False,False,False
+354,Nasty,(mean wicked) ,False,False,True,False,False,False,False,False
+355,Natural,(pure simple unadorned) ,True,False,False,True,False,False,False,False
+356,Natural,(normal pure) ,False,False,True,False,False,False,False,False
+357,Naughty & Nice,(impish mischievous playful) ,False,False,False,False,False,False,True,False
+358,Neat,(tidy orderly cool) ,True,False,False,False,True,False,False,False
+359,Neat,(clean orderly) ,False,False,True,False,False,False,False,False
+360,Neat & Clean,(spotless tidy shipshape) ,False,False,False,False,False,False,True,False
+361,Neglected,(ignored disregarded rejected) ,True,False,False,False,True,False,False,False
+362,Nerdy,(unhip uncool dorky) ,True,True,False,False,False,False,False,False
+363,New,(fresh modern) ,False,False,True,False,False,False,False,False
+364,New & Improved,(upgraded enhanced revised) ,False,False,False,False,False,False,True,False
+365,Nice,(pleasant kind) ,False,False,True,False,False,False,False,False
+366,Noisy,(loud not quiet) ,False,False,True,False,False,False,False,False
+367,Normal,(usual common ordinary) ,True,True,False,False,False,False,False,False
+368,Nutty,(kooky foolish nutlike) ,False,False,False,False,False,True,False,False
+369,Obnoxious,(offensive repulsive annoying) ,True,True,False,False,False,False,False,False
+370,Obscene,(offensive indecent lewd) ,False,False,False,False,False,True,False,False
+371,Odd,(different eccentric bizarre) ,True,True,False,False,False,False,False,False
+372,Odd,(unusual strange) ,False,False,True,False,False,False,False,False
+373,Offensive,(insulting vulgar attacking) ,True,True,False,False,False,False,False,False
+374,Old,(aged elderly antiquated) ,False,False,False,False,False,True,False,False
+375,Old,(not new used) ,False,False,True,False,False,False,False,False
+376,Old & Cranky,(crabby cantankerous aged) ,False,False,False,False,False,False,True,False
+377,Old & Wise,(experienced judicious shrewd) ,False,False,False,False,False,False,True,False
+378,On The Up & Up,(trustworthy irreproachable honest) ,False,False,False,False,False,False,True,False
+379,Orderly,(methodical formal systematic) ,False,False,False,False,True,False,False,False
+380,Ordinary,(usual common plain) ,True,True,False,False,False,False,False,False
+381,Ordinary,(normal common) ,False,False,True,False,False,False,False,False
+382,Organic,(natural clean biological) ,True,False,False,False,True,False,False,False
+383,Outrageous,(shocking scandalous disgraceful) ,True,True,False,False,False,False,False,False
+384,Overwhelming,(exhaustive breathtaking monumental) ,True,False,False,True,False,False,False,False
+385,Painful,(hurtful agonizing unbearable) ,True,False,False,True,False,False,False,False
+386,Painful,(hurting sore) ,False,False,True,False,False,False,False,False
+387,Pale,(faded colorless) ,False,False,True,False,False,False,False,False
+388,Pathetic,(pitiful distressing heart-rending) ,True,False,False,False,True,False,False,False
+389,Patriotic,(nationalistic loyal public-spirited) ,True,True,False,False,False,False,False,False
+390,Peaceful,(serene restful calm) ,True,False,False,True,False,False,False,False
+391,Peaceful,(calm quiet) ,False,False,True,False,False,False,False,False
+392,Perfect,(faultless consummate exact) ,True,True,False,False,False,False,False,False
+393,Perfect,(ideal wonderful) ,False,False,True,False,False,False,False,False
+394,Perverse,(stubborn obstinate improper) ,False,False,False,False,False,True,False,False
+395,Philosophical,(thoughtful contemplative wise) ,True,False,False,True,False,False,False,False
+396,Phony,(false artificial imitation) ,True,True,False,False,False,False,False,False
+397,Plain,(simple evident ordinary) ,False,True,False,False,False,False,False,False
+398,Plain,(simple dull) ,False,False,True,False,False,False,False,False
+399,Plain & Simple,(unadorned uncomplicated clear) ,False,False,False,False,False,False,True,False
+400,Playful,(fun frisky entertaining) ,True,False,False,True,False,False,False,False
+401,Playful,(fun cheerful) ,False,False,True,False,False,False,False,False
+402,Pleasant,(enjoyable nice) ,False,False,True,False,False,False,False,False
+403,Plug & Play,(effortless automatic self-operating) ,False,False,False,False,False,False,True,False
+404,Plump & Tender,(ripe chubby fleshy) ,False,False,False,False,False,False,True,False
+405,Polite,(respectful well-mannered) ,False,False,True,False,False,False,False,False
+406,Poor,(not rich unfortunate) ,False,False,True,False,False,False,False,False
+407,Popular,(well-liked accepted preferred) ,True,False,False,False,True,False,False,False
+408,Powerful,(strong forceful robust) ,True,True,False,False,False,False,False,False
+409,Powerful,(strong forceful) ,False,False,True,False,False,False,False,False
+410,Practical,(useful helpful) ,False,False,True,False,False,False,False,False
+411,Pretty,(lovely attractive good-looking) ,False,False,False,False,False,True,False,False
+412,Pretty,(good-looking pleasing) ,False,False,True,False,False,False,False,False
+413,Prim & Proper,(reserved modest prudish) ,False,False,False,False,False,False,True,False
+414,Primitive,(prehistoric primal uncivilized) ,True,True,False,False,False,False,False,False
+415,Principled,(conscientious ethical scrupulous) ,True,True,False,False,False,False,False,False
+416,Profound,(deep wise thoughtful) ,True,True,False,False,False,False,False,False
+417,Proud,(dignified satisfied) ,False,False,True,False,False,False,False,False
+418,Puffy,(swollen billowy bloated) ,True,False,False,False,True,False,False,False
+419,Pure,(innocent unadulterated chaste) ,True,True,False,False,False,False,False,False
+420,Quick,(fast speedy) ,False,False,True,False,False,False,False,False
+421,Quick & Dirty,(cheap shoddy inferior) ,False,False,False,False,False,False,True,False
+422,Quiet,(peaceful silent calm) ,True,False,False,False,True,False,False,False
+423,Quiet,(silent noiseless) ,False,False,True,False,False,False,False,False
+424,Radiant,(shining glowing sparkling) ,True,False,False,True,False,False,False,False
+425,Radical,(unconventional revolutionary extreme) ,True,True,False,False,False,False,False,False
+426,Rare,(scarce unusual half-cooked) ,True,False,False,True,False,False,False,False
+427,Raw,(crude uncooked harsh) ,False,False,False,False,False,True,False,False
+428,Realistic,(authentic lifelike reasonable) ,True,False,False,True,False,False,False,False
+429,Refreshing,(brisk invigorating rejuvenating) ,True,False,False,True,False,False,False,False
+430,Refined,(well-bred purified cultivated) ,True,False,False,False,True,False,False,False
+431,Relaxed,(calm not tense) ,False,False,True,False,False,False,False,False
+432,Relaxing,(restful calming peaceful) ,True,False,False,False,True,False,False,False
+433,Repulsive,(disgusting offensive foul) ,True,False,False,False,True,False,False,False
+434,Respectable,(worthy honorable decent) ,False,False,False,False,False,True,False,False
+435,Responsible,(accountable obligated mature) ,True,True,False,False,False,False,False,False
+436,Revolutionary,(innovative rebellious radical) ,True,False,False,True,False,False,False,False
+437,Rich,(wealthy affluent moneyed) ,True,True,False,False,False,False,False,False
+438,Rich,(wealthy not poor) ,False,False,True,False,False,False,False,False
+439,Ridiculous,(preposterous absurd ludicrous) ,True,True,False,False,False,False,False,False
+440,Risky,(hazardous daring speculative) ,True,False,False,True,False,False,False,False
+441,Rough,(scratchy uneven jagged) ,True,True,False,False,False,False,False,False
+442,Rough,(not smooth not gentle) ,False,False,True,False,False,False,False,False
+443,Rough & Ready,(crude makeshift prepared) ,False,False,False,False,False,False,True,False
+444,Round,(circular ring shaped) ,False,False,True,False,False,False,False,False
+445,Sad,(unhappy gloomy) ,False,False,True,False,False,False,False,False
+446,Saintly,(virtuous angelic divine) ,True,True,False,False,False,False,False,False
+447,Sappy,(gooey mushy romantic) ,True,True,False,False,False,False,False,False
+448,Scary,(frightening absurd ugly) ,True,True,False,False,False,False,False,False
+449,Scary,(frightening spooky) ,False,False,True,False,False,False,False,False
+450,Scenic,(picturesque dramatic panoramic) ,True,False,False,True,False,False,False,False
+451,Scented,(perfumed fragrant) ,False,False,True,False,False,False,False,False
+452,Secretive,(concealed covert veiled) ,False,False,False,False,False,True,False,False
+453,Selfish,(stingy greedy miserly) ,True,True,False,False,False,False,False,False
+454,Sensational,(thrilling startling melodramatic) ,False,False,False,False,False,True,False,False
+455,Senseless,(meaningless absurd foolish) ,True,False,False,False,True,False,False,False
+456,Sensitive,(susceptible sympathetic tender) ,True,True,False,False,False,False,False,False
+457,Sensual,(tactile pleasing sexual) ,True,True,False,False,False,False,False,False
+458,Serious,(important thoughtful) ,False,False,True,False,False,False,False,False
+459,Sexy,(arousing appealing seductive) ,True,True,False,False,False,False,False,False
+460,Shaggy,(bushy stringy) ,False,False,True,False,False,False,False,False
+461,Shallow,(superficial trivial not deep) ,True,False,False,False,True,False,False,False
+462,Sharp,(pointed keen acute) ,True,False,False,False,True,False,False,False
+463,Sharp,(pointed not rounded) ,False,False,True,False,False,False,False,False
+464,Shiny,(reflective gleaming polished) ,True,False,False,True,False,False,False,False
+465,Shiny,(bright glossy) ,False,False,True,False,False,False,False,False
+466,Shocking,(frightening electrifying startling) ,True,False,False,True,False,False,False,False
+467,Short,(not long not tall) ,False,False,True,False,False,False,False,False
+468,Short & Stout,(plump portly tubby) ,False,False,False,False,False,False,True,False
+469,Short & Sweet,(precise clear-cut succinct) ,False,False,False,False,False,False,True,False
+470,Shy,(bashful timid cautious) ,True,False,False,True,False,False,False,False
+471,Shy,(bashful timid) ,False,False,True,False,False,False,False,False
+472,Sick & Tired,(worn out exhausted exasperated) ,False,False,False,False,False,False,True,False
+473,Sick & Twisted,(depraved wicked lascivious) ,False,False,False,False,False,False,True,False
+474,Sickening,(nauseating disgusting revolting) ,False,False,False,False,False,True,False,False
+475,Sickening,(disgusting horrible) ,False,False,True,False,False,False,False,False
+476,Silent,(quiet still) ,False,False,True,False,False,False,False,False
+477,Silky,(smooth soft) ,False,False,True,False,False,False,False,False
+478,Silly,(goofy absurd nonsensical) ,True,False,False,True,False,False,False,False
+479,Silly,(foolish goofy) ,False,False,True,False,False,False,False,False
+480,Simple,(plain easy) ,False,False,True,False,False,False,False,False
+481,Skillful,(expert talented) ,False,False,True,False,False,False,False,False
+482,Skinny,(thin lean) ,False,False,True,False,False,False,False,False
+483,Slender,(slim small) ,False,False,True,False,False,False,False,False
+484,Slimy,(slippery gooey) ,False,False,True,False,False,False,False,False
+485,Slippery,(slick sliding) ,False,False,True,False,False,False,False,False
+486,Sloppy,(messy careless) ,False,False,True,False,False,False,False,False
+487,Slow,(not fast pokey) ,False,False,True,False,False,False,False,False
+488,Slow & Steady,(reliable deliberate ponderous) ,False,False,False,False,False,False,True,False
+489,Sluggish,(inactive lazy slothful) ,False,False,False,False,False,True,False,False
+490,Small,(little not large) ,False,False,True,False,False,False,False,False
+491,Smart,(intelligent stylish witty) ,True,False,False,False,True,False,False,False
+492,Smart,(intelligent clever) ,False,False,True,False,False,False,False,False
+493,Smelly,(stinky odorous rank) ,True,False,False,False,True,False,False,False
+494,Smelly,(stinky bad odor) ,False,False,True,False,False,False,False,False
+495,Smooth,(even level flat) ,True,True,False,False,False,False,False,False
+496,Smooth,(not bumpy flat) ,False,False,True,False,False,False,False,False
+497,Smooth & Creamy,(silky velvety rich) ,False,False,False,False,False,False,True,False
+498,Snappy,(stylish trendy fast) ,True,False,False,False,True,False,False,False
+499,Sneaky,(tricky mean) ,False,False,True,False,False,False,False,False
+500,Soft,(malleable pliable mushy) ,True,True,False,False,False,False,False,False
+501,Soft,(not hard tender) ,False,False,True,False,False,False,False,False
+502,Sophisticated,(urbane cosmopolitan complex) ,False,False,False,False,False,True,False,False
+503,Sour,(bitter tart) ,False,False,True,False,False,False,False,False
+504,Special,(distinctive unique original) ,False,False,False,False,False,True,False,False
+505,Special,(individual unique) ,False,False,True,False,False,False,False,False
+506,Speedy,(quick rapid fast) ,True,True,False,False,False,False,False,False
+507,Speedy,(quick fast) ,False,False,True,False,False,False,False,False
+508,Spic & Span,(spotless tidy clean) ,False,False,False,False,False,False,True,False
+509,Spicy,(flavorable tangy hot) ,True,False,False,True,False,False,False,False
+510,Spiritual,(religious inspired supernatural) ,True,False,False,True,False,False,False,False
+511,Spooky,(scary weird ghostly) ,True,False,False,True,False,False,False,False
+512,Spooky,(scary frightening) ,False,False,True,False,False,False,False,False
+513,Sporty,(athletic active) ,False,False,True,False,False,False,False,False
+514,Spotless,(clean pure) ,False,False,True,False,False,False,False,False
+515,Spunky,(perky lively spirited) ,True,False,False,True,False,False,False,False
+516,Square,(rectangular uncool dull) ,False,False,False,True,False,False,False,False
+517,Squeaky Clean,(pure immaculate unapproachable) ,True,False,False,True,False,False,False,False
+518,Stereotyped,(pigeonholed caricatured characterized) ,True,True,False,False,False,False,False,False
+519,Sticky,(gummy pasty) ,False,False,True,False,False,False,False,False
+520,Stinky,(smelly bad odor) ,False,False,True,False,False,False,False,False
+521,Straight,(not curved direct) ,False,False,True,False,False,False,False,False
+522,Strange,(odd unusual) ,False,False,True,False,False,False,False,False
+523,Strong,(powerful forceful) ,False,False,True,False,False,False,False,False
+524,Stunning,(astonishing staggering astounding) ,True,True,False,False,False,False,False,False
+525,Stupid,(ignorant unintelligent inane) ,False,False,False,False,False,True,False,False
+526,Sultry,(sweltering humid sensual) ,True,False,False,False,True,False,False,False
+527,Surprising,(unexpected amazing) ,False,False,True,False,False,False,False,False
+528,Sweet,(sugary caring good) ,True,True,False,False,False,False,False,False
+529,Sweet,(sugary nice) ,False,False,True,False,False,False,False,False
+530,Swift,(quick speedy expeditious) ,True,True,False,False,False,False,False,False
+531,Swift & Sure,(steady prompt definite) ,False,False,False,False,False,False,True,False
+532,Talented,(gifted clever skillful) ,True,True,False,False,False,False,False,False
+533,Talented,(skillful gifted) ,False,False,True,False,False,False,False,False
+534,Tall,(not short not low) ,False,False,True,False,False,False,False,False
+535,Tame,(subdued gentle trained) ,True,False,False,False,True,False,False,False
+536,Tame,(not wild mild) ,False,False,True,False,False,False,False,False
+537,Tasty,(flavorful savory appetizing) ,False,False,False,False,False,True,False,False
+538,Tasty,(flavorful yummy) ,False,False,True,False,False,False,False,False
+539,Technological,(scientific futuristic mechanical) ,True,False,False,True,False,False,False,False
+540,Temperamental,(moody irritable short-tempered) ,True,True,False,False,False,False,False,False
+541,Tempting,(seductive enticing alluring) ,False,False,False,False,False,True,False,False
+542,Tender,(soft compassionate fragile) ,False,False,False,False,False,True,False,False
+543,Terrible,(awful dreadful) ,False,False,True,False,False,False,False,False
+544,Terrific,(sensational fabulous severe) ,False,False,False,False,False,True,False,False
+545,Thick,(wide solid) ,False,False,True,False,False,False,False,False
+546,Thick & Chunky,(bulky heavy lumpy) ,False,False,False,False,False,False,True,False
+547,Thin,(skinny narrow) ,False,False,True,False,False,False,False,False
+548,Thoughtful,(caring unselfish) ,False,False,True,False,False,False,False,False
+549,Timeless,(classic ageless well-established) ,True,True,False,False,False,False,False,False
+550,Tiny,(little very small) ,False,False,True,False,False,False,False,False
+551,Tormenting,(torturing harassing agonizing) ,False,False,False,False,False,True,False,False
+552,Torn & Tattered,(shabby ragged grungy) ,False,False,False,False,False,False,True,False
+553,Touch & Go,(indecisive uncertain insecure) ,False,False,False,False,False,False,True,False
+554,Touchy-Feely,(affectionate tactile huggy) ,True,True,False,False,False,False,False,False
+555,Tough,(strong firm difficult) ,True,False,False,True,False,False,False,False
+556,Tough,(strong hard) ,False,False,True,False,False,False,False,False
+557,Trashy,(shameless nasty indecent) ,False,False,False,False,False,True,False,False
+558,Tried & True,(tested proven trustworthy) ,False,False,False,False,False,False,True,False
+559,True & Blue,(loyal faithful patriotic) ,False,False,False,False,False,False,True,False
+560,Trustworthy,(honest reliable unfailing) ,True,True,False,False,False,False,False,False
+561,Trustworthy,(dependable honest) ,False,False,True,False,False,False,False,False
+562,Twisted,(distorted warped perverted) ,True,False,False,False,True,False,False,False
+563,Ugly,(not pretty unpleasant) ,False,False,True,False,False,False,False,False
+564,Unforgettable,(notable impressive remarkable) ,True,True,False,False,False,False,False,False
+565,Unforgettable,(memorable treasured) ,False,False,True,False,False,False,False,False
+566,Unhappy,(sad sorrowful) ,False,False,True,False,False,False,False,False
+567,Unhealthy,(risky sickly dangerous) ,True,False,False,False,True,False,False,False
+568,Unnatural,(abnormal artificial bizarre) ,True,False,False,False,True,False,False,False
+569,Unreal,(imaginary illusionary unbelievable) ,True,False,False,False,True,False,False,False
+570,Unscrupulous,(unethical corrupt unprincipled) ,True,True,False,False,False,False,False,False
+571,Unusual,(rare odd uncommon) ,True,False,False,False,True,False,False,False
+572,Untamed,(wild natural) ,False,False,True,False,False,False,False,False
+573,Up & Coming,(promising enterprising gifted) ,False,False,False,False,False,False,True,False
+574,Up & Down,(volatile variable vertical) ,False,False,False,False,False,False,True,False
+575,Useful,(helpful handy) ,False,False,True,False,False,False,False,False
+576,Useless,(worthless ineffective unneeded) ,True,False,False,True,False,False,False,False
+577,Useless,(worthless not valuable) ,False,False,True,False,False,False,False,False
+578,Vain,(conceited arrogant fruitless) ,False,False,False,False,False,True,False,False
+579,Valuable,(expensive important) ,False,False,True,False,False,False,False,False
+580,Violent,(furious vicious destructive) ,True,False,False,True,False,False,False,False
+581,Virtuous,(worthy righteous chaste) ,True,False,False,False,True,False,False,False
+582,Visionary,(idealistic prophetic far-seeing) ,True,True,False,False,False,False,False,False
+583,Warm,(tepid mild affectionate) ,False,False,False,False,True,False,False,False
+584,Warm,(heated somewhat hot) ,False,False,True,False,False,False,False,False
+585,Warm & Cozy,(snug comfy friendly) ,False,False,False,False,False,False,True,False
+586,Warm & Fuzzy,(kindhearted loving affectionate) ,False,False,False,False,False,False,True,False
+587,Wash & Wear,(durable easy-care sturdy) ,False,False,False,False,False,False,True,False
+588,Weak,(not strong sickly) ,False,False,True,False,False,False,False,False
+589,Weird,(abnormal peculiar odd) ,True,False,False,True,False,False,False,False
+590,Weird,(odd mysterious) ,False,False,True,False,False,False,False,False
+591,Wet,(watery soaked) ,False,False,True,False,False,False,False,False
+592,Whimsical,(humourous peculiar fanciful) ,False,False,False,False,False,True,False,False
+593,Wicked,(evil corrupt depraved) ,True,True,False,False,False,False,False,False
+594,Wide,(broad thick) ,False,False,True,False,False,False,False,False
+595,Wild,(untamed savage ferocious) ,True,True,False,False,False,False,False,False
+596,Wild,(not tame crazy) ,False,False,True,False,False,False,False,False
+597,Wild & Wooly,(untamed uncontrolled reckless) ,False,False,False,False,False,False,True,False
+598,Wired,(strained tense nervous) ,False,False,False,False,False,True,False,False
+599,Witty,(clever humorous cunning) ,True,False,False,True,False,False,False,False
+600,Woebegone,(dismal sorrowful bummed out) ,True,False,False,True,False,False,False,False
+601,Wonderful,(great excellent) ,False,False,True,False,False,False,False,False
+602,Worldly,(experienced sophisticated materialistic) ,True,False,False,True,False,False,False,False
+603,Worthless,(useless meaningless) ,False,False,True,False,False,False,False,False
+604,Young,(not old new) ,False,False,True,False,False,False,False,False
+605,Young & Restless,(fidgety impatient flighty) ,False,False,False,False,False,False,True,False
+606,Yucky,(icky sickening) ,False,False,True,False,False,False,False,False
+607,Zany,(crazy funny wacky) ,True,True,False,False,False,False,False,False
