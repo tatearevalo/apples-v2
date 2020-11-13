@@ -1,1 +1,4 @@
-django==3.1.1
+flask==1.1.2
+flask-socketio==4.3.1
+python-dotenv==0.15.0
+websocket_client==0.57.0
