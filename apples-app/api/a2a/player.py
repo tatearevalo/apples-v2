@@ -9,7 +9,7 @@
 ###############################################################################
 
 class ApplesPlayer:
-	def __init__(self):
+	def __init__(self, game_id):
 		pass
 
 	def connect_to_server(self):
@@ -26,4 +26,3 @@ class ApplesPlayer:
 
 	def reset(self):
 		raise NotImplementedError
-		

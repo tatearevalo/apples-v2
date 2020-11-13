@@ -2,29 +2,27 @@
 
 ###############################################################################
 #                                                                             #
-#  game.py                                                                    #
+#  controller.py                                                              #
 #                                                                             #
 #    Apples-to-Apples game class                                              #
 #                                                                             #
 ###############################################################################
 
-
 from flask_socketio import SocketIO
 
-class ApplesGame:
-	def __init__(self, game_id):
-		self.player_ct = 0
-		self.id = game_id
-		print(f'[Game] Game {self.id} created.')
+from a2a.player import ApplesPlayer
+from a2a.game import ApplesGame
 
-	def create_server(self):
-		raise NotImplementedError
+class ApplesController:
+	def __init__(self):
+		self.id = 0
+		self.games = []
+	
+	def make_game(self):
+		print(f'[Controller] Making game: id {self.id}')
+		new_game = ApplesGame(self.id)
+		self.games.append((self.id, new_game))
+		self.id += 1
 
-	def start_game(self):
-		raise NotImplementedError
-
-	def play_hand(self):
-		raise NotImplementedError
-
-	def reset(self):
+	def destroy_game(self):
 		raise NotImplementedError
