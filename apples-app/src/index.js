@@ -3,9 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
+const home_page = (
+    <div className="home_page">
+        <div>Welcome</div>
+        <div className="small">to the</div>
+        <div>"Apples to Apples"</div>
+        <div>Web App</div>
+        <button className="play_button">Let's Play!</button>
+    </div>
+
+);
+
+
 const rules_page = (
     <div>
-        <h1 className="title">Welcome to the "Apples to Apples" Online App</h1>
+        <h1 className="title">"Apples to Apples"</h1>
         <h2 className="header">How to Play</h2>
         <div className="rules">
             <ol>
@@ -25,7 +37,7 @@ const rules_page = (
             </ol>
         </div>
         <div className="start_button">
-            <button>Let's Play</button>
+            <button>Start</button>
         </div>
     </div>
 );
@@ -33,23 +45,211 @@ const rules_page = (
 
 var initial = (
     <div>
+        <div className="page_title">Apples to Apples</div>
+        <div className="top_level">
+            <div className="score_card">
+                <div className="score">
+                    Green Cards
+                </div>
+                <div className="player_score">Player 1: #</div>
+                <div className="player_score">Player 2: #</div>
+                <div className="player_score">Player 3: #</div>
+                <div className="player_score">Player 4: #</div>
+            </div>
+            <div className="green_card">
+                <div className="container">
+                    <h4>Green Card</h4>
+                    <p>Content</p>
+                </div>
+            </div>
+        </div>
         <table className="center">
             <tr>
                 <th>Player 2</th>
+                <td></td>
                 <th>Player 3</th>
+                <td></td>
                 <th>Player 4</th>
             </tr>
             <tr>
-                <td className="player_icon"></td>
-                <td className="player_icon"></td>
-                <td className="player_icon"></td>
+                <td className="player_icon">
+                    <div className="mini_card">
+                        <div className="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+                <td className="player_icon">
+                    <div className="mini_card">
+                        <div className="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+                <td className="player_icon">
+                    <div className="mini_card">
+                        <div className="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
             </tr>
         </table>
-        <div className="red_card"></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+    
+        <div className="my_card">
+            <div className="my_card_score">
+                #
+            </div>
+        </div>
+    
+        <br></br>
+        <div className="cards">
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+        </div>
+        <div>
+            <button className="submit">Submit</button>
+        </div>
+        <br></br>
+        <br></br>
+        <div>
+            <button className="chat">Chat</button>
+        </div>
     </div>
-
-
     );
+
+
+var judge_page = (
+    <div>
+        <div className="page_title">Apples to Apples</div>
+        <div className="top_level">
+            <div className="score_card">
+                <div className="score">
+                    Green Cards
+                </div>
+                <div className="player_score">Player 1: #</div>
+                <div className="player_score">Player 2: #</div>
+                <div className="player_score">Player 3: #</div>
+                <div className="player_score">Player 4: #</div>
+            </div>
+        </div>
+        <table className="center">
+            <tr>
+                <th>Player 2</th>
+                <td></td>
+                <th>Player 3</th>
+                <td></td>
+                <th>Player 4</th>
+            </tr>
+            <tr>
+                <td className="player_icon">
+                    <div className="mini_card">
+                        <div className="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+                <td className="player_icon">
+                    <div className="mini_card">
+                        <div className="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+                <td className="player_icon">
+                    <div className="mini_card">
+                        <div className="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+    
+        <div className="judge_prompt">
+            Pick the Winner!
+        </div>
+    
+        <br></br>
+        <div className="cards">
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="red_card">
+                <div className="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button className="judge_green_card">
+                <div className="container">
+                    <h4>Green Card</h4>
+                </div>
+            </button>
+        </div>
+        <div>
+            <button className="submit">Submit</button>
+        </div>
+        <br></br>
+        <br></br>
+        <div>
+            <button className="chat">Chat</button>
+        </div>
+    </div>
+);
 
 
 
