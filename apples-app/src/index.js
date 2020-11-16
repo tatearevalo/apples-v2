@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import apple from './apple.png';
 
 var win = 0;
 function homeClick() {
@@ -31,11 +32,27 @@ function judgeClick() {
 function Home() {
     return (
         <div className="home_page">
+            <img src={apple} height={100} width={100}/>
+            <img src={apple} height={100} width={100}/>
+            <img src={apple} height={100} width={100}/>
+            <img src={apple} height={100} width={100}/>
+            <img src={apple} height={100} width={100}/>
+            <img src={apple} height={100} width={100}/>
+            <img src={apple} height={100} width={100}/>
             <div>Welcome</div>
             <div className="small">to the</div>
             <div>"Apples to Apples"</div>
             <div>Web App</div>
             <button onClick={homeClick} className="play_button">Let's Play!</button>
+            <div className="apples">
+                <img src={apple} height={100} width={100}/>
+                <img src={apple} height={100} width={100}/>
+                <img src={apple} height={100} width={100}/>
+                <img src={apple} height={100} width={100}/>
+                <img src={apple} height={100} width={100}/>
+                <img src={apple} height={100} width={100}/>
+                <img src={apple} height={100} width={100}/>
+            </div>
         </div>
     );
 }
@@ -101,7 +118,8 @@ function Start() {
                     <th>Player 4</th>
                 </tr>
                 <tr>
-                    <td className="player_icon">
+                    <td >
+                        <img src={apple} height={110} width={110}/>
                         <div className="mini_card">
                             <div className="mini_score">
                                 <p>#</p>
@@ -109,7 +127,8 @@ function Start() {
                         </div>
                     </td>
                     <td></td>
-                    <td className="player_icon">
+                    <td >
+                        <img src={apple} height={110} width={110}/>
                         <div className="mini_card">
                             <div className="mini_score">
                                 <p>#</p>
@@ -117,7 +136,8 @@ function Start() {
                         </div>
                     </td>
                     <td></td>
-                    <td className="player_icon">
+                    <td >
+                        <img src={apple} height={110} width={110}/>
                         <div className="mini_card">
                             <div className="mini_score">
                                 <p>#</p>
@@ -129,9 +149,7 @@ function Start() {
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
-            <br></br>
-        
+            
             <div className="my_card">
                 <div className="my_card_score">
                     #
@@ -213,7 +231,8 @@ function Judge() {
                     <th>Player 4</th>
                 </tr>
                 <tr>
-                    <td className="player_icon">
+                    <td >
+                        <img src={apple} height={110} width={110}/>
                         <div className="mini_card">
                             <div className="mini_score">
                                 <p>#</p>
@@ -221,7 +240,8 @@ function Judge() {
                         </div>
                     </td>
                     <td></td>
-                    <td className="player_icon">
+                    <td >
+                        <img src={apple} height={110} width={110}/>
                         <div className="mini_card">
                             <div className="mini_score">
                                 <p>#</p>
@@ -229,7 +249,8 @@ function Judge() {
                         </div>
                     </td>
                     <td></td>
-                    <td className="player_icon">
+                    <td >
+                        <img src={apple} height={110} width={110}/>
                         <div className="mini_card">
                             <div className="mini_score">
                                 <p>#</p>
