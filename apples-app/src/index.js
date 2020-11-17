@@ -3,6 +3,51 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import apple from './apple.png';
 
+
+/* ========================== Websockets ================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    var socket = io.connect('http://'+document.domain+':'+location.port);
+
+    socket.on('connect', () => {
+        socket.send('I am connected');
+    });
+
+    socket.on('message', data => {
+        if ('new_game' in data) {   
+            window.alert(`Created game id: ${data.new_game}`)
+        }
+        if ('join_game' in data) {
+            console.log(`Joining game: ${data.game_id}`);
+        }
+        if ('game_not_found' in data) {
+            window.alert(`Game does not exist.`)
+        }
+    });
+
+    socket.on('event_handler', data => {
+        console.log(data);
+    });
+
+    document.querySelector('#create_game').onclick = () => {
+        var message = {
+            'type':'create_game_request',
+            'data':'None'
+        };
+        socket.send(message);
+    }
+
+    document.querySelector('#join_game').onclick = data => {
+        var message = {
+            'type':'join_game',
+            'data':document.querySelector('#game_id_text').value
+        };
+        socket.send(message);
+    }
+})
+
+/* ==================================================================== */
+
 var win = 0;
 function homeClick() {
     ReactDOM.render(<Rules />, document.getElementById('root'));
@@ -13,6 +58,8 @@ function rulesClick() {
 }
 
 function startClick() {
+    console.log('poop')
+    console.log(document.getElementById('root'));
     ReactDOM.render(<Judge />, document.getElementById('root'));
 }
 
@@ -44,6 +91,16 @@ function Home() {
             <div>"Apples to Apples"</div>
             <div>Web App</div>
             <button onClick={homeClick} className="play_button">Let's Play!</button>
+
+            <div className="start_button">
+                <button id="create_game">Create New Game</button>
+            </div>
+
+            <div id="game_id_input">
+                <input type="text" id="game_id_text" placeholder="Game ID"></input>
+                <button type="button" id="join_game">Join Game</button>
+            </div>
+
             <div className="apples">
                 <img src={apple} height={100} width={100}/>
                 <img src={apple} height={100} width={100}/>

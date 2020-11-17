@@ -8,7 +8,6 @@
 #                                                                             #
 ###############################################################################
 
-
 from flask_socketio import SocketIO
 
 class ApplesGame:
