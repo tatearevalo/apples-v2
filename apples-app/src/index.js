@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import apple from './apple.png';
-
+import './index.css';
 
 /* ========================== Websockets ================================ */
 
@@ -45,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
         socket.send(message);
     }
 })
-
 /* ==================================================================== */
+
 
 var win = 0;
 function homeClick() {
@@ -58,7 +57,6 @@ function rulesClick() {
 }
 
 function startClick() {
-    console.log('poop')
     console.log(document.getElementById('root'));
     ReactDOM.render(<Judge />, document.getElementById('root'));
 }
@@ -90,7 +88,7 @@ function Home() {
             <div className="small">to the</div>
             <div>"Apples to Apples"</div>
             <div>Web App</div>
-            <button onClick={homeClick} className="play_button">Let's Play!</button>
+            <button onClick={homeClick} className="play_button">Play!</button>
 
             <div className="start_button">
                 <button id="create_game">Create New Game</button>
@@ -360,8 +358,6 @@ function Judge() {
         </div>
     );
 }
-
-
 
 
 ReactDOM.render(<Home />, document.getElementById('root'));
