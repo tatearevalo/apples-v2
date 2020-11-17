@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 /* ==================================================================== */
 
-
 var win = 0;
 function homeClick() {
     ReactDOM.render(<Rules />, document.getElementById('root'));
@@ -111,7 +110,6 @@ function Home() {
         </div>
     );
 }
-
 
 function Rules() {
     return (
@@ -358,6 +356,5 @@ function Judge() {
         </div>
     );
 }
-
 
 ReactDOM.render(<Home />, document.getElementById('root'));
