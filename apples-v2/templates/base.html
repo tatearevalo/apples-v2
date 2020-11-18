@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apples to Apples</title>
+    <!-- Style -->
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/apples.css') }}">
+    <!-- SocketIO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="{{ url_for('static', filename='scripts/apples.js') }}"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  </head>
+
+  <body style="background-color: lightgreen;">
+  	{% block body %}
+  	{% endblock %}
+  </body>
+
+</html>

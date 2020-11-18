@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div>
+    <div class="page_title">Apples to Apples</div>
+    <div class="top_level">
+        <div class="score_card">
+            <div class="score">
+                Green Cards
+            </div>
+            <div class="player_score">Player 1: #</div>
+            <div class="player_score">Player 2: #</div>
+            <div class="player_score">Player 3: #</div>
+            <div class="player_score">Player 4: #</div>
+        </div>
+    </div>
+    <table class="center">
+        <tr>
+            <th>Player 2</th>
+            <td></td>
+            <th>Player 3</th>
+            <td></td>
+            <th>Player 4</th>
+        </tr>
+        <tr>
+            <td >
+                <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
+                <div class="mini_card">
+                    <div class="mini_score">
+                        <p>#</p>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+            <td >
+                <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
+                <div class="mini_card">
+                    <div class="mini_score">
+                        <p>#</p>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+            <td >
+                <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
+                <div class="mini_card">
+                    <div class="mini_score">
+                        <p>#</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    <br></br> <br></br> <br></br> <br></br> <br></br>
+
+    <div class="judge_prompt">
+        Pick the Winner!
+    </div>
+
+    <br></br>
+    <div class="cards">
+        <button class="red_card">
+            <div class="container">
+                <h4>Red Card</h4>
+            </div>
+        </button>
+        <button class="red_card">
+            <div class="container">
+                <h4>Red Card</h4>
+            </div>
+        </button>
+        <button class="red_card">
+            <div class="container">
+                <h4>Red Card</h4>
+            </div>
+        </button>
+        <button class="judge_green_card">
+            <div class="container">
+                <h4>Green Card</h4>
+            </div>
+        </button>
+    </div>
+    <div>
+        <button onClick={judgeClick} class="submit">Submit</button>
+    </div>
+    <br></br>
+    <br></br>
+    <div>
+        <button class="chat">Chat</button>
+    </div>
+</div>
+{% endblock %}

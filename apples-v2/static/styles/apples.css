@@ -1,0 +1,225 @@
+
+* { 
+    font-size: 98%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+th, td {
+    padding: 15px;
+}
+
+
+.home_page {
+    margin-top: 50px;
+    text-align: center;
+    color: darkred;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.play_button {
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: red;
+    border: solid black;
+}
+
+.play_button:hover {
+    color: forestgreen;
+    background-color: white;
+}
+
+
+.small {
+    font-size: 42px;
+}
+
+.title {
+   font-size: 35px;
+   text-align: center;
+   color: darkred;
+}
+
+.header {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.rules {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.start_button {
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.player_icon {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.judge_prompt {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.cards {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.red_card {
+    margin: 2.5px;
+    background-color: crimson;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 220px;
+    width: 135px;
+    border-radius: 5px;
+}
+
+.red_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.judge_green_card {
+    margin: 2.5px;
+    background-color: limegreen;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 220px;
+    width: 135px;
+    border-radius: 5px;
+}
+
+
+.green_card {
+    position: absolute;
+    right: 20px;
+    margin-top: 15px;
+    background-color: limegreen;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 220px;
+    width: 135px;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+
+
+.score_card {
+    margin: 20px;
+    height: 160px;
+    width: 120px;
+    background-color: lemonchiffon;
+    border:solid black 2px;
+}
+
+.score {
+    text-align: center;
+    font-weight: bold;
+}
+
+.player_score {
+    margin-left: 3px;
+    text-align: left;
+}
+
+.top_level {
+    display: flex;
+}
+
+.mini_card {
+    position: relative;
+    margin: auto;
+    background-color: limegreen;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 50px;
+    width: 28px;
+    border-radius: 3px;
+    text-align: center;
+
+}
+
+.mini_score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.my_card {
+    margin: auto;
+    position: relative;
+    background-color: limegreen;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 82px;
+    width: 55px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.my_card_score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.page_title {
+    font-size: x-large;
+    color: darkred;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.submit {
+    margin-top: 10px;
+    float: right;
+    margin-right: 2%;
+}
+
+.chat {
+    margin-top: 5px;
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+
+
+.apples {
+    margin-top: 20px;
+}
+
+

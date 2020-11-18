@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div>
+    <div class="page_title">Apples to Apples</div>
+    <span>Current game id: {{ game_id }}</span>
+
+    <div class="top_level">
+
+        <!-- Scoreboard -->
+        <div class="score_card">
+            <div class="score">Green Cards</div>
+             
+            {% for player in players %}
+            <div class="player_score">{{ player['username'] }}: {{ player['score']}}</div>
+            {% endfor %}
+            
+        </div>
+
+        <!-- Active green card -->
+        <div class="green_card">
+            <div class="container">
+                <h4>Green Card</h4>
+                <p>Content</p>
+            </div>
+        </div>
+    </div>
+
+    <table class="center">
+        <tr>
+            {% for player in players %}
+            <th>{{ player['username'] }}</th>
+            {% endfor %}
+        </tr>
+        <!-- Opponent display -->
+        <tr>
+            {% for player in players %}
+                <td >
+                    <img src="{{ url_for('static', filename='images/apple.png') }}" height=110px width=110px/>
+                    <div class="mini_card">
+                        <div class="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+            {% endfor %}
+        </tr>
+    </table>
+
+    <br></br><br></br><br></br>
+
+    <div class="my_card">
+        <div class="my_card_score">
+            #
+        </div>
+    </div>
+
+    <br></br>
+    <div class="cards">
+        {% for card in cards %}
+        <button class="red_card">
+            <div class="container"><h4>{{ card['item'] }}</h4></div>
+        </button>
+        {% endfor %}
+    </div>
+
+    <div>
+        <button onClick={startClick} class="submit">Submit</button>
+    </div>
+    <br></br> <br></br>
+</div>
+{% endblock %}

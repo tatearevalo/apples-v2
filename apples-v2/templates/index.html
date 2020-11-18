@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block body %}
+ <div class="home_page">
+    <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+    <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+    <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+    <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+    <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+    <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+    <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+
+    <div>Welcome</div>
+    <div class="small">to the</div>
+    <div>"Apples to Apples"</div>
+    <div>Web App</div>
+
+    <div class="start_button">
+        <button id="create_game">Create New Game</button>
+    </div>
+
+    <div id="game_id_input">
+        <input type="text" id="game_id_input_text" placeholder="Game ID"></input>
+        <input type="text" id="username_input_text" placeholder="Username"></input>
+        <button type="button" id="join_game">Join Game</button>
+    </div>
+
+    <div class="apples">
+        <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+        <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+        <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+        <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+        <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+        <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+        <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+    </div>
+</div>
+{% endblock %}
