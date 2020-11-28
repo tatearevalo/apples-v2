@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apples to Apples</title>
+    <!-- Style -->
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/apples.css') }}">
+    <!-- SocketIO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="{{ url_for('static', filename='scripts/apples.js') }}"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  </head>
+
+  <body style="background-color: lightgreen;">
+
+  <!------------------------------------------------------------------------------------------->
+
+    <div class="home_page" id="home_page_id">
+      <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+      <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+      <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+      <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+      <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+      <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+      <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+
+      <div>Welcome</div>
+      <div class="small">to the</div>
+      <div>"Apples to Apples"</div>
+      <div>Web App</div>
+
+      <div class="start_button">
+          <button id="create_game">Create New Game</button>
+      </div>
+
+      <div id="game_id_input">
+          <input type="text" id="game_id_input_text" placeholder="Game ID"></input>
+          <input type="text" id="username_input_text" placeholder="Username"></input>
+          <button type="button" id="join_game" onclick="showHideDiv('home_page_id','game_page_id') startGame()">Join Game</button>
+      </div>
+
+      <div class="apples">
+          <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+          <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+          <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+          <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+          <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+          <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+          <img src="{{ url_for('static', filename='images/apple.png') }}" height=100, width=100/>
+      </div>
+    </div>
+
+  <!------------------------------------------------------------------------------------------->
+    <div id='rules_page_id' style="visibility:none">
+      <h1 class="title">"Apples to Apples"</h1>
+      <h2 class="header">How to Play</h2>
+      <div class="rules">
+          <ol>
+              <li>One of the players will be randomly assigned to be the judge.</li>
+              <li>All players will be dealt a private hand of seven red apple cards.</li>
+              <li>A green apple card will be selected from the top of the stack and shown to all players.</li>
+              <li>Players must then quickly choose the red apple card from their hand that they feel is best described by the green apple card.</li>
+              <li>Once each player picks their red apple card, they must submit that card to the judge.</li>
+              <li>The judge then views the chosen red apple cards but does not know who chose which cards.</li>
+              <li>The chosen red apple cards are shown for all players to see with identities still hidden.</li>
+              <li>Judge then selects the red apple card he or she thinks is best described by the green apple card.</li>
+              <li>The player whose red apple card is selected by the judge is the winner of the round and is awarded the green apple card.</li>
+              <li>To keep score, players count the green apple cards that they have won.</li>
+              <li>After each round, the red apple cards are discarded and a new set of seven red apple cards are dealt to each player again.</li>
+              <li>The role of judge is passed on to the next player and the next round begins</li>
+              <li>The first player to reach a certain number of green cards wins the game!</li>
+          </ol>
+      </div>
+      <div class="start_button">
+          <button onClick={rulesClick}>Start</button>
+      </div>
+    </div>
+
+  <!------------------------------------------------------------------------------------------->
+    <div id='game_page_id' style="visibility:none">
+      <div class="page_title">Apples to Apples</div>
+      <span>Current game id: {{ game_id }}</span>
+
+      <div class="top_level">
+
+          <!-- Scoreboard -->
+          <div class="score_card" id="score_card_id">
+              <div class="score">Green Cards</div>
+               
+              {% for player in players %}
+              <div class="player_score">{{ player['username'] }}: {{ player['score']}}</div>
+              {% endfor %}
+          </div>
+
+          <!-- Active green card -->
+          <div class="green_card">
+              <div class="container">
+                  <h4>Green Card</h4>
+                  <p>Content</p>
+              </div>
+          </div>
+      </div>
+
+      <table class="center">
+          <tr>
+              {% for player in players %}
+              <th>{{ player['username'] }}</th>
+              {% endfor %}
+          </tr>
+          <!-- Opponent display -->
+          <tr>
+              {% for player in players %}
+                  <td >
+                      <img src="{{ url_for('static', filename='images/apple.png') }}" height=110px width=110px/>
+                      <div class="mini_card">
+                          <div class="mini_score">
+                              <p>#</p>
+                          </div>
+                      </div>
+                  </td>
+                  <td></td>
+              {% endfor %}
+          </tr>
+      </table>
+
+      <br></br><br></br><br></br>
+
+      <div class="my_card">
+          <div class="my_card_score">
+              #
+          </div>
+      </div>
+
+      <br></br>
+      <div class="cards">
+          {% for card in cards %}
+          <button class="red_card">
+              <div class="container"><h4>{{ card['item'] }}</h4></div>
+          </button>
+          {% endfor %}
+      </div>
+
+      <div>
+          <button onClick={startClick} class="submit">Submit</button>
+      </div>
+      <br></br> <br></br>
+    </div>
+
+    <!------------------------------------------------------------------------------------------->
+
+    <div id="judge_page_id" style="visibility:none">
+        <div class="page_title">Apples to Apples</div>
+        <div class="top_level">
+            <div class="score_card">
+                <div class="score">
+                    Green Cards
+                </div>
+                <div class="player_score">Player 1: #</div>
+                <div class="player_score">Player 2: #</div>
+                <div class="player_score">Player 3: #</div>
+                <div class="player_score">Player 4: #</div>
+            </div>
+        </div>
+        <table class="center">
+            <tr>
+                <th>Player 2</th>
+                <td></td>
+                <th>Player 3</th>
+                <td></td>
+                <th>Player 4</th>
+            </tr>
+            <tr>
+                <td >
+                    <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
+                    <div class="mini_card">
+                        <div class="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+                <td >
+                    <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
+                    <div class="mini_card">
+                        <div class="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+                <td >
+                    <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
+                    <div class="mini_card">
+                        <div class="mini_score">
+                            <p>#</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <br></br> <br></br> <br></br> <br></br> <br></br>
+
+        <div class="judge_prompt">
+            Pick the Winner!
+        </div>
+
+        <br></br>
+        <div class="cards">
+            <button class="red_card">
+                <div class="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button class="red_card">
+                <div class="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button class="red_card">
+                <div class="container">
+                    <h4>Red Card</h4>
+                </div>
+            </button>
+            <button class="judge_green_card">
+                <div class="container">
+                    <h4>Green Card</h4>
+                </div>
+            </button>
+        </div>
+        <div>
+            <button onClick={judgeClick} class="submit">Submit</button>
+        </div>
+        <br></br>
+        <br></br>
+        <div>
+            <button class="chat">Chat</button>
+        </div>
+    </div>
+
+  </body>
+
+</html>
