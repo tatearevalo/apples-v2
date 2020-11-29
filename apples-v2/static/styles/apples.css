@@ -14,6 +14,14 @@ th, td {
 }
 
 
+.inputs {
+    font-size: 50%;
+    height: 50%;
+    width: 50%;
+    
+}
+
+
 .home_page {
     margin-top: 50px;
     text-align: center;
@@ -59,8 +67,7 @@ th, td {
 
 
 .start_button {
-    border-radius: 10px;
-    text-align: center;
+    background-color: blue;
 }
 
 
