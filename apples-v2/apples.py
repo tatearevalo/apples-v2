@@ -32,7 +32,7 @@ class ApplesPlayer:
         self.hand = [self.draw_card('red_cards') for _ in range(CARDS_IN_HAND)]
         self.played_card_idx = None
         self.id = sid
-        self.selected_card = None
+        self.selected_card = random.choice(self.hand)
 
     def get_type(self):
     	return self.player_type
@@ -84,8 +84,6 @@ class ApplesGame:
 
     def get_player_ids(self):
     	return self.players.keys()
-
-    def get
 
     def get_players(self):
     	return [self.players[pid] for pid in self.players.keys()]

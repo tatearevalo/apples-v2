@@ -7,7 +7,8 @@ var Player = function(init){
     self.type = init.player_type;
     self.score = 0;
     self.color = 'red';
-    self.cards = [];
+    self.selected = null;
+    self.hand = [];
     self.winner = false;
 
     self.update = function(pack){
@@ -26,6 +27,9 @@ var Player = function(init){
 }
 Player.list = {};
 var selfId = null;
+var gameState = null;
+var lastWinnerId = null;
+var currentJudgeId = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     var socket = io.connect('http://'+document.domain+':'+location.port);
@@ -67,13 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // refresh game
     socket.on('update_game', data => {
         console.log('[client] updating game');
-        updateGame(data.state, data.players);
+        updateGame(data.state, data.players, data.green_card);
     });
 
     // refresh hand
     socket.on('update_hand', data => {
         var me = Player.list[selfId];
-        me.cards = data.hand;
+        me.hand = data.hand;
     });
 
     /****************************************************
@@ -83,28 +87,100 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(player.type);
         var text = document.getElementById(player.type).innerHTML;
         text += '<br />';
-        if(player.username.length !== 0)
+        if (player.username.length !== 0)
             text += player.username;
         else
             text += 'Unnamed';
         document.getElementById(player.type).innerHTML = text;
     }
 
-    function updateGame(state, players) {
+    function updateGame(state, players, greenCard) {
         console.log('updating game');
 
+        for (var i = 0; i < players.length; i++){
+            var data = players[i];
+            var p = Player.list[data.id];
+            var oldScore = p.score;
+            p.type = data.player_type;
+            p.selected = data.selected_card;
 
+            if(p.type == 'judge')
+                currentJudgeId = p.id;
 
-        /*
-        var new_elem = document.createElement('div');
-        new_elem.setArrtibute('class', 'player_score');
-        new_elem.setArrtibute('id', username + '_score');
-        new_elem.innerHTML = username 
+            if (oldScore < data.score){
+                p.winner = true;
+                lastWinnerId = p.id;
+                p.score = data.score;
+                //update leaderboard
+            }
+        }
 
-        var score_card = document.getElementByClassName('score_card');
-        score_card.innerHTML += new_elem;
-        */
+        if (gameState != state){
+            showNewState(gameState, state, greenCard);
+            gameState = state;
+        }
     };
+
+    function showNewState(oldState, newState, greenCard) {
+        var msg = '';
+        var me = Player.list[selfId];
+        var greenCardDiv = document.getElementById('green_card');
+
+        //states include: lobby, submission, judging, winner
+        if (newState == 'lobby'){
+            msg = 'Waiting for players to join...';
+
+
+            //if olState != null, hide seleected cards 
+
+        } else if(newState == 'submission'){
+            if(me.type == 'active_player'){
+                msg = 'Select a card to submit';
+            }else{
+                msg = 'Players are deliberating...';
+                if(me.type == 'judge')
+                    msg += '<br />You are the judge';
+            }
+
+            greenCardDiv.style.display = 'block';
+
+            //show new green card
+            //oldState must be lobby, winner, null
+            //if !spectator, show own hand, make hand cards selectable
+            //else show message: "Choose the best card" if active_player
+            //show submit button if active_player
+            //delete selected_cards
+
+
+        } else if(newState == 'judging'){
+            if(me.type != 'judge'){
+                var judge = Player.list[currentJudgeId];
+                if(judge != null)
+                    msg = 'Judge ' + judge.username + ' is deliberating...';
+            }else{
+                msg = 'Select the best card';
+            }
+            //if !judge, hide submit button
+            //make hand cards unselectable
+            //if selfid is judge, then make the hand cards darker,
+            //and the selected_cards become selectable, and submit button show
+
+        } else if(newState == 'winner'){
+            if(me.winner){
+                msg = 'Congratulations, you won!';
+            }else{
+                var username = Player.list[lastWinnerId].username;
+                msg = username + 'has won!';
+            }
+            //hide submit button
+            //highlight winner's selected_card
+
+        }
+        if(me.type == 'spectator' && oldState != 'lobby' && newState != 'lobby')
+            msg += '<br />You are spectating';
+
+        document.getElementById("game_message").innerHTML = msg;
+    }
 
     function displayGameID(game_id) {
         document.getElementById('game_id').innerHTML = 'Game ID: '+game_id;
@@ -121,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         startGame(username, game_id);
     };    
 
-    document.querySelector('#submit_card_game_button').onclick = () => {
+    document.querySelector('#submit_button').onclick = () => {
         var card = document.querySelector('#active_card').value;
         socket.emit('play_card', card);
     };

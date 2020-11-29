@@ -55,8 +55,7 @@ def update_loop():
             for player_id in game.get_player_ids():
                 player = game.players[player_id]
                 players.append(player.serialize())
-                hand = player.get_hand() /
-                           if player.get_type() != 'spectator' else []
+                hand = player.get_hand() if player.get_type() != 'spectator' else []
                 player_update = {'player_hand': hand}
                 socketio.emit('update_hand', player_update, room=player_id)
 

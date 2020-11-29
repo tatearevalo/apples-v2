@@ -104,8 +104,13 @@
               </div>
           </div>
       </div>
+      <div id="playing_area">
+        <span id="game_message">Waiting for players to join ...</span>
+        <div id="selected_cards" style="display:none"></div>
+      </div>
 
       <table class="center">
+
           <tr>
               {% for player in players %}
               <th>{{ player['username'] }}</th>
@@ -141,7 +146,7 @@
       </div>
 
       <div>
-          <button id="submit_card_game_button" class="submit">Submit</button>
+          <button id="submit_button" class="submit">Submit</button>
       </div>
       <div>
           <button id="show_rules_game_button" class="submit">Show Rules</button>
