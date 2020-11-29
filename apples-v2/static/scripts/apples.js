@@ -77,24 +77,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // refresh hand
     socket.on('update_hand', data => {
         var me = Player.list[selfId];
+        console.log(data.hand);
         var oldHand = me.hand;
         me.hand = data.hand;
         if(oldHand == null){
             for(var i=0; i < data.hand.length; i++){
                 var card = data.hand[i];
+
+                // create card div
                 var cardDiv = document.createElement('div');
-                cardDiv.setAttribute('class', 'hand_card');
-                var cardItem = cardDiv.appendChild('span');
+                cardDiv.setAttribute('class', 'red_card');
+
+                // create card item
+                var cardItem = document.createElement('span');
                 cardItem.setAttribute('class', 'card_item');
                 cardItem.textContent = card.item;
-                var cardDesc = cardDiv.appendChild('span');
-                cardDesc.setAttribute('class', 'card_desc');
-                cardDesc.textContent = card.description;
 
-                document.getElementById('my_hand').appendChild(cardDiv);
+                // create card description
+                var cardDesc = document.createElement('span');
+                cardDesc.setAttribute('class', 'card_desc');
+
+                if (card.description == null) {
+                    cardDesc.textContent = 'Self-Describing ...'
+                } else {
+                    cardDesc.textContent = card.description;
+                }
+
+                cardDiv.appendChild(cardItem);
+                cardDiv.appendChild(cardDesc);
+                document.getElementById('cards').appendChild(cardDiv);
             }
         }
-
     });
 
     /****************************************************
@@ -134,14 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if(p.id == selfId){
 
             }
-
         }
 
         if (gameState != state){
             showNewState(gameState, state, greenCard);
             gameState = state;
         }
-            }
     };
 
     function showNewState(oldState, newState, greenCard) {
@@ -160,36 +171,34 @@ document.addEventListener('DOMContentLoaded', () => {
             playedCardsDiv.style.display = 'none';
             submitBtn.style.display = 'none';
 
-            //if olState != null, hide seleected cards 
+            //if oldState != null, hide seleected cards 
 
-        } else if(newState == 'submission'){
-            if(me.type == 'active_player'){
+        } else if (newState == 'submission'){
+            if (me.type == 'active_player'){
                 msg = 'Select a card to submit';
                 submitBtn.style.display = 'block';
                 myCardsDiv.style.display = 'block';
-            }else{
+            } else {
                 msg = 'Players are deliberating...';
-                if(me.type == 'judge'){
+                if (me.type == 'judge'){
                     msg += '<br />You are the judge';
                 }
             }
-
             playedCardsDiv.style.display = 'none';
             greenCardDiv.style.display = 'block';
             document.getElementById('green_card_item').innerHTML = greenCard.item;
             document.getElementById('green_card_disc').innerHTML = greenCard.description;
 
-
             //oldState must be lobby, winner, null
             //if !spectator, show own hand, make hand cards selectable
 
-        } else if(newState == 'judging'){
-            if(me.type != 'judge'){
+        } else if (newState == 'judging'){
+            if (me.type != 'judge'){
                 submitBtn.style.display = 'none';
                 var judge = Player.list[currentJudgeId];
                 if(judge != null)
                     msg = 'Judge ' + judge.username + ' is deliberating...';
-            }else{
+            } else {
                 submitBtn.style.display = 'block';
                 msg = 'Select the best card';
             }
@@ -201,14 +210,13 @@ document.addEventListener('DOMContentLoaded', () => {
             //if selfid is judge, then make the hand cards darker,
             //and the selected_cards become selectable, and submit button show
 
-        } else if(newState == 'winner'){
-            if(me.winner){
+        } else if (newState == 'winner'){
+            if (me.winner) {
                 msg = 'Congratulations, you won!';
-            }else{
+            } else {
                 var username = Player.list[lastWinnerId].username;
                 msg = username + 'has won!';
             }
-
             submitBtn.style.display = 'none';
             //highlight winner's selected_card
 

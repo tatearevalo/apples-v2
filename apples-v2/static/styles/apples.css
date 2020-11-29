@@ -90,12 +90,23 @@ th, td {
 
 .red_card {
     margin: 2.5px;
+    float: left;
     background-color: crimson;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     height: 220px;
     width: 135px;
     border-radius: 5px;
+}
+
+.card_item {
+    text-align: center;
+}
+
+.card_desc {
+    text-align: center;
+    margin-top: 5px;
+
 }
 
 .red_card:hover {

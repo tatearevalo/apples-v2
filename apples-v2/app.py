@@ -55,8 +55,8 @@ def update_loop():
             for player_id in game.get_player_ids():
                 player = game.players[player_id]
                 players.append(player.serialize())
-                hand = player.get_hand() if player.get_type() != 'spectator' else []
-                player_update = {'player_hand': hand}
+                hand = player.get_hand() # if player.get_type() != 'spectator' else []
+                player_update = {'hand': hand}
                 socketio.emit('update_hand', player_update, room=player_id)
 
             # message to entire room
@@ -96,10 +96,6 @@ def connection_disconnected():
 def create_game_handler():
     game = create_game()
     emit('game_created', {'game':game})
-
-# @socketio.on('start_game')
-# def game_start(msg):
-#     room = msg.room
 
 @socketio.on('join_game')
 def join_game(msg):
