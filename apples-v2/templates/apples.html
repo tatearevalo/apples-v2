@@ -82,14 +82,19 @@
     </div>
 
   <!----------------------------- Game Page ---------------------------------->
-    <div id='game_page_id' style="display:none">
+    <div id='game_div' style="display:none">
       <div class="page_title">Apples to Apples</div>
       <span id='game_id'>Game ID: Default</span>
 
       <div class="top_level">
           <!-- Scoreboard -->
           <div class="score_card" id="score_card_id">
-              <div class="score">Green Cards</div>
+            <div id='scoreboard'>LEADERBOARD
+              <span id='active_player'></span>
+              <div id='spectator_container'>Spectators
+                <span id='spectator'></span>
+              </div>
+            </div>
           </div>
           <!-- Active green card -->
           <div class="green_card">
