@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //if selfid is judge, then make the hand cards darker,
             //and the selected_cards become selectable, and submit button show
 
-        } else if (newState == 'winner'){
+        } else if (newState == 'winner') {
             if (me.winner) {
                 msg = 'Congratulations, you won!';
             } else {

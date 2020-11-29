@@ -117,10 +117,17 @@ class ApplesGame:
     def start_game(self):
         if len(self.players) < 3 and self.states == 'lobby':
             return
-        self.status = 'started'
+        self.status = 'submission'
 
     def game_logic(self):
         if self.status == 'lobby':
-            return
-        if self.status == 'started':
+            if len(self.players) >= 3:
+            	self.status == 'submission'
+            	return
+
+        if self.status == 'submission':
             pass
+        if self.status == 'judging':
+        	pass
+       	if self.status == 'winner':
+       		pass
