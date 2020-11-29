@@ -8,7 +8,7 @@ var Player = function(init){
     self.score = 0;
     self.color = 'red';
     self.selected = null;
-    self.hand = [];
+    self.hand = null;
     self.winner = false;
 
     self.update = function(pack){
@@ -77,7 +77,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // refresh hand
     socket.on('update_hand', data => {
         var me = Player.list[selfId];
+        var oldHand = me.hand;
         me.hand = data.hand;
+        if(oldHand == null){
+            for(var i=0; i < data.hand.length; i++){
+                var card = data.hand[i];
+                var cardDiv = document.createElement('div');
+                cardDiv.setAttribute('class', 'hand_card');
+                var cardItem = cardDiv.appendChild('span');
+                cardItem.setAttribute('class', 'card_item');
+                cardItem.textContent = card.item;
+                var cardDesc = cardDiv.appendChild('span');
+                cardDesc.setAttribute('class', 'card_desc');
+                cardDesc.textContent = card.description;
+
+                document.getElementById('my_hand').appendChild(cardDiv);
+            }
+        }
+
     });
 
     /****************************************************
@@ -113,53 +130,72 @@ document.addEventListener('DOMContentLoaded', () => {
                 p.score = data.score;
                 //update leaderboard
             }
+
+            if(p.id == selfId){
+
+            }
+
         }
 
         if (gameState != state){
             showNewState(gameState, state, greenCard);
             gameState = state;
         }
+            }
     };
 
     function showNewState(oldState, newState, greenCard) {
         var msg = '';
         var me = Player.list[selfId];
+        var myCardsDiv = document.getElementById('my_hand');
+        var submitBtn = document.getElementById('submit_button');
         var greenCardDiv = document.getElementById('green_card');
+        var playedCardsDiv = document.getElementById('selected_cards_container');
 
         //states include: lobby, submission, judging, winner
         if (newState == 'lobby'){
             msg = 'Waiting for players to join...';
 
+            greenCardDiv.style.display = 'none';
+            playedCardsDiv.style.display = 'none';
+            submitBtn.style.display = 'none';
 
             //if olState != null, hide seleected cards 
 
         } else if(newState == 'submission'){
             if(me.type == 'active_player'){
                 msg = 'Select a card to submit';
+                submitBtn.style.display = 'block';
+                myCardsDiv.style.display = 'block';
             }else{
                 msg = 'Players are deliberating...';
-                if(me.type == 'judge')
+                if(me.type == 'judge'){
                     msg += '<br />You are the judge';
+                }
             }
 
+            playedCardsDiv.style.display = 'none';
             greenCardDiv.style.display = 'block';
+            document.getElementById('green_card_item').innerHTML = greenCard.item;
+            document.getElementById('green_card_disc').innerHTML = greenCard.description;
 
-            //show new green card
+
             //oldState must be lobby, winner, null
             //if !spectator, show own hand, make hand cards selectable
-            //else show message: "Choose the best card" if active_player
-            //show submit button if active_player
-            //delete selected_cards
-
 
         } else if(newState == 'judging'){
             if(me.type != 'judge'){
+                submitBtn.style.display = 'none';
                 var judge = Player.list[currentJudgeId];
                 if(judge != null)
                     msg = 'Judge ' + judge.username + ' is deliberating...';
             }else{
+                submitBtn.style.display = 'block';
                 msg = 'Select the best card';
             }
+
+            playedCardsDiv.style.display = 'block';
+            //delete selected_cards, make new divs
             //if !judge, hide submit button
             //make hand cards unselectable
             //if selfid is judge, then make the hand cards darker,
@@ -172,7 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 var username = Player.list[lastWinnerId].username;
                 msg = username + 'has won!';
             }
-            //hide submit button
+
+            submitBtn.style.display = 'none';
             //highlight winner's selected_card
 
         }
