@@ -96,6 +96,7 @@ th, td {
 }
 
 .red_card {
+    z-index: 100;
     margin: 2.5px;
     float: left;
     background-color: crimson;
@@ -104,6 +105,19 @@ th, td {
     height: 220px;
     width: 135px;
     border-radius: 5px;
+}
+
+
+.red_card:active, .red_card:focus {
+    background-color: blue;
+}
+
+.red_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.active {
+    background-color: #8B0000;
 }
 
 .card_item {
@@ -115,11 +129,6 @@ th, td {
     margin-top: 5px;
 
 }
-
-.red_card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 
 .judge_green_card {
     margin: 2.5px;

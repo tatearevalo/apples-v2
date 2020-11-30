@@ -22,7 +22,7 @@ from apples import ApplesGame, ApplesPlayer
 ########################################################
 # Globals                                              #
 ########################################################
-UPDATE_TIME = 3  # seconds
+UPDATE_TIME = 3
 MAX_REQUEST_LEN=25
 
 app = Flask(__name__)
@@ -47,10 +47,10 @@ def update_loop():
     while True:
         time.sleep(UPDATE_TIME)
         for game_id in list(room_list):
-            print(f'[update loop] game_id: {game_id}')
             game = room_list[game_id]
-            players = []
+            game.game_logic()
 
+            players = []
             # messages to each individual player
             for player_id in game.get_player_ids():
                 player = game.players[player_id]
@@ -62,8 +62,13 @@ def update_loop():
             # message to entire room
             game_update = {
                 'state': game.get_state(),
-                'players': players
+                'selected_cards': game.get_selected_cards(),
+                'players': players,
+                'green_card': [game.green_card]
             }
+            if game.get_winner() is not None:
+                game_update['winner_id'] = game.get_winner()
+
             socketio.emit('update_game', game_update, room=game_id)
 
 ########################################################
@@ -97,6 +102,20 @@ def create_game_handler():
     game = create_game()
     emit('game_created', {'game':game})
 
+@socketio.on('red_card_submission')
+def red_card_submission_handler(msg):
+    print(f"received red card: {msg['card_item']}")
+    player_id = request.sid
+    game_id = msg['game_id']
+    card_item = msg['card_item']
+    game = room_list[game_id]
+    player = room_list[game_id].get_player(player_id)
+    if player_id != game.judge:
+        player.play_card(card_item)
+    else:
+        game.set_winner(card_item)
+    print(f'received red card submission: {card_item}')
+
 @socketio.on('join_game')
 def join_game(msg):
     sid = request.sid
@@ -107,8 +126,6 @@ def join_game(msg):
 
         new_player = ApplesPlayer(username=msg['username'], sid=sid)
         room_list[game_id].add_player(new_player)
-
-        print(get_players_attrs(game_id))
 
         response = {
             'game_id': game_id,

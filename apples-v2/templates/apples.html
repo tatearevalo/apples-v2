@@ -2,18 +2,12 @@
 <html lang="en">
 
   <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/apples.css') }}">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Apples to Apples</title>
     <!-- Style -->
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/apples.css') }}">
-    <!-- SocketIO -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" crossorigin="anonymous"></script>
-    <!-- Javascript -->
-    <script src="{{ url_for('static', filename='scripts/apples.js') }}"></script>
-    <!-- jQuery -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   </head>
 
   <body style="background-color: lightgreen;">
@@ -86,36 +80,84 @@
     <div id='game_div' style="display:none">
       <div class="page_title">Apples to Apples</div>
       <span id='game_id'>Game ID: Default</span>
-
+      <span id='current_judge' class="game_el active_player spectator winner submission judging winner_selected">Judge username presides</span>
       <div class="top_level">
           <!-- Scoreboard -->
           <div class="score_card" id="score_card_id">
             <div id='scoreboard'>LEADERBOARD
-              <span id='active_player'></span>
-              <div id='spectator_container'>Spectators
-                <span id='spectator'></span>
-              </div>
+              <span id='player_list'></span>
+              <br>
+              <span id='spectator_list'>Spectators</span>
             </div>
           </div>
           <!-- Active green card -->
-          <div class="green_card">
-              <div class="container">
-                  <h4>Green Card</h4>
-                  <p>Content</p>
-              </div>
+          <div class="green_card game_el judge spectator active_player submission winner judging winner_selected">
+            <h1 class="card_item">Item</h1>
+            <span class="card_desc"></span>
           </div>
       </div>
       <div id="playing_area">
-        <span id="game_message">Waiting for players...</span>
-        <div id="green_card" style="display:none">
-          <span id="green_card_item" class="card_item"></span>
-          <span id="green_card_desc" class="card_desc"></span>
+        <span id="lobby_message" class="game_el lobby">Waiting for players to join...</span>
+        <span id="spectator_message" class="game_el spectator submission judging winner_selected">You are spectating</span>
+        <span id="select_non_judge_message" class="game_el active_player submission">Select a red card to submit</span>
+        <button id="submit_btn_non_judge" class="game_el active_player submission">Submit</button>
+        <span id="select_judge_message" class="game_el judge judging">You are the judge! Select the best red card</span>
+        <button id="submit_btn_judge" class="game_el judge judging">Submit</button>
+        <span id="waiting_submission_message" class="game_el judge spectator submission">You are the judge! Waiting for players...</span>
+        <span id="winner_message" class="game_el judge spectator active_player winner_selected">Username has won!</span>
+        <span id="self_winner_message" class="game_el winner winner_selected">Congratulations, you won!</span>
+
+        <div id="selected_cards_container" class="game_el judge spectator active_player winner judging winner_selected">
+          <div class="red_card selected">
+            <h1 class="card_item">Item</h1>
+            <span class="card_desc"></span>
+          </div>
+          <div class="red_card selected">
+            <h1 class="card_item">Item</h1>
+            <span class="card_desc"></span>
+          </div>
+          <div class="red_card selected">
+            <h1 class="card_item">Item</h1>
+            <span class="card_desc"></span>
+          </div>
+          <div class="red_card selected">
+            <h1 class="card_item">Item</h1>
+            <span class="card_desc"></span>
+          </div>
+          <div class="red_card selected">
+            <h1 class="card_item">Item</h1>
+            <span class="card_desc"></span>
+          </div>
+          <div class="red_card selected">
+            <h1 class="card_item">Item</h1>
+            <span class="card_desc"></span>
+          </div>
         </div>
-        <div id="selected_cards_container" style="display:none"></div>
       </div>
 
-      <div id="cards">
+      <div id="cards" class="game_el active_player winner submission judging winner_selected">
+        <div class="red_card my_hand">
+          <h1 class="card_item">Item</h1>
+          <span class="card_desc"></span>
+        </div>
+        <div class="red_card my_hand">
+          <h1 class="card_item">Item</h1>
+          <span class="card_desc"></span>
+        </div>
+        <div class="red_card my_hand">
+          <h1 class="card_item">Item</h1>
+          <span class="card_desc"></span>
+        </div>
+        <div class="red_card my_hand">
+          <h1 class="card_item">Item</h1>
+          <span class="card_desc"></span>
+        </div>
+        <div class="red_card my_hand">
+          <h1 class="card_item">Item</h1>
+          <span class="card_desc"></span>
+        </div>
       </div>
+
 
       <br></br>
 
@@ -123,102 +165,17 @@
       </div>
 
       <div>
-          <button id="submit_button" class="submit">Submit</button>
-      </div>
-      <div>
           <button id="show_rules_game_button" class="submit">Show Rules</button>
       </div>
       <br></br> <br></br>
     </div>
 
     <!------------------------------------------------------------------------------------------->
-
-    <div id="judge_page_id" style="display:none">
-        <div class="page_title">Apples to Apples</div>
-        <div class="top_level">
-            <div class="score_card">
-                <div class="score">
-                    Green Cards
-                </div>
-                <div class="player_score">Player 1: #</div>
-                <div class="player_score">Player 2: #</div>
-                <div class="player_score">Player 3: #</div>
-                <div class="player_score">Player 4: #</div>
-            </div>
-        </div>
-        <table class="center">
-            <tr>
-                <th>Player 2</th>
-                <td></td>
-                <th>Player 3</th>
-                <td></td>
-                <th>Player 4</th>
-            </tr>
-            <tr>
-                <td >
-                    <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
-                    <div class="mini_card">
-                        <div class="mini_score">
-                            <p>#</p>
-                        </div>
-                    </div>
-                </td>
-                <td></td>
-                <td >
-                    <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
-                    <div class="mini_card">
-                        <div class="mini_score">
-                            <p>#</p>
-                        </div>
-                    </div>
-                </td>
-                <td></td>
-                <td >
-                    <img src="{{ url_for('static', filename='images/apple.png') }}" height={110} width={110}/>
-                    <div class="mini_card">
-                        <div class="mini_score">
-                            <p>#</p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        
-        <br></br> <br></br> <br></br> <br></br> <br></br>
-
-        <div class="judge_prompt">
-            Pick the Winner!
-        </div>
-
-        <br></br>
-        <div class="cards">
-            <button class="red_card">
-                <div class="container">
-                    <h4>Red Card</h4>
-                </div>
-            </button>
-            <button class="red_card">
-                <div class="container">
-                    <h4>Red Card</h4>
-                </div>
-            </button>
-            <button class="red_card">
-                <div class="container">
-                    <h4>Red Card</h4>
-                </div>
-            </button>
-            <button class="judge_green_card">
-                <div class="container">
-                    <h4>Green Card</h4>
-                </div>
-            </button>
-        </div>
-        <div>
-            <button id="submit_card_judge_button" class="submit">Submit</button>
-        </div>
-        <br></br>
-    </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- Javascript -->
+    <script src="{{ url_for('static', filename='scripts/apples.js') }}"></script>
   </body>
 
 </html>
